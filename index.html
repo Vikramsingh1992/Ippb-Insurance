@@ -1,0 +1,590 @@
+<!doctype html>
+<html lang="hi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>IPPB x Bajaj Life Insurance Plans</title>
+  <meta name="description" content="IPPB और Bajaj Life की गारंटीड बीमा और निवेश योजनाएं।">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400;600;700;800&family=Noto+Sans:wght@400;600;700;800&family=Poppins:wght@700;800&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"InsuranceAgency","name":"IPPB x Bajaj Life Insurance Plans","telephone":"+919992997558","areaServed":"India","brand":["India Post Payments Bank","Bajaj Life Insurance"]}</script>
+  <style>
+﻿:root {
+  --ippb-red: #d7252a;
+  --ippb-blue: #003087;
+  --bajaj-blue: #004b8d;
+  --gold: #f5a623;
+  --bg: #f5f7fa;
+  --text: #1a1a2e;
+  --muted: #5d6472;
+  --line: #dfe5ee;
+  --white: #ffffff;
+  --shadow: 0 14px 38px rgba(0, 48, 135, 0.13);
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  color: var(--text);
+  background: var(--white);
+  font-family: "Noto Sans", "Noto Sans Devanagari", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.65;
+}
+img { max-width: 100%; }
+a { color: inherit; text-decoration: none; }
+button, input, select { font: inherit; }
+
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  background: rgba(255, 255, 255, 0.96);
+  border-bottom: 1px solid var(--line);
+  backdrop-filter: blur(12px);
+}
+.header-inner {
+  max-width: 1180px;
+  margin: 0 auto;
+  min-height: 92px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 10px 18px;
+}
+.brand-lockup { display: flex; align-items: center; gap: 14px; min-width: 310px; }
+.brand-logo { display: block; object-fit: contain; flex: 0 0 auto; }
+.ippb-img { width: 138px; height: 80px; }
+.bajaj-img { width: 48px; height: 48px; }
+
+.nav-toggle { display: none; border: 0; background: var(--ippb-blue); color: var(--white); border-radius: 6px; padding: 9px 12px; }
+.site-nav { margin-left: auto; display: flex; align-items: center; gap: 4px; }
+.site-nav a {
+  padding: 9px 10px;
+  border-bottom: 3px solid transparent;
+  font-weight: 700;
+  color: #24314a;
+  white-space: nowrap;
+}
+.site-nav a:hover, .site-nav a:focus { border-color: var(--ippb-red); color: var(--ippb-red); }
+.header-actions { display: flex; align-items: center; gap: 10px; }
+.lang-toggle { border: 1px solid var(--line); background: var(--white); color: var(--ippb-blue); border-radius: 6px; padding: 9px 11px; font-weight: 800; cursor: pointer; }
+.cta, .btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  min-height: 44px;
+  padding: 11px 17px;
+  border: 0;
+  border-radius: 6px;
+  background: var(--ippb-red);
+  color: var(--white);
+  font-weight: 800;
+  cursor: pointer;
+  box-shadow: 0 8px 18px rgba(215, 37, 42, 0.2);
+}
+.btn.secondary { background: var(--ippb-blue); box-shadow: 0 8px 18px rgba(0, 48, 135, 0.22); }
+.btn.light { background: var(--white); color: var(--ippb-blue); box-shadow: none; }
+
+main { overflow: hidden; }
+.section { padding: 64px 18px; }
+.section.alt { background: var(--bg); }
+.container { max-width: 1120px; margin: 0 auto; }
+.hero {
+  min-height: calc(100vh - 92px);
+  display: flex;
+  align-items: center;
+  background:
+    linear-gradient(130deg, rgba(0, 48, 135, 0.95), rgba(215, 37, 42, 0.9)),
+    radial-gradient(circle at 82% 20%, rgba(245, 166, 35, 0.45), transparent 28%);
+  color: var(--white);
+  position: relative;
+}
+.hero::after {
+  content: "";
+  position: absolute;
+  inset: auto 0 0 auto;
+  width: min(52vw, 620px);
+  height: min(48vw, 520px);
+  background: none center/contain no-repeat;
+  opacity: 0.24;
+  pointer-events: none;
+}
+.hero .container { position: relative; z-index: 1; }
+.hero h1, .page-hero h1 { font-family: "Poppins", sans-serif; font-size: clamp(34px, 5vw, 64px); line-height: 1.08; margin: 0 0 18px; letter-spacing: 0; }
+.hero p { max-width: 700px; font-size: 20px; margin: 0 0 10px; }
+.hero .english { color: #f4f7ff; font-size: 18px; }
+.hero-actions { display: flex; flex-wrap: wrap; gap: 14px; margin-top: 28px; }
+
+.page-hero {
+  background: linear-gradient(130deg, var(--ippb-blue), #0a56a3 52%, var(--ippb-red));
+  color: var(--white);
+  padding: 74px 18px;
+}
+.page-hero p { max-width: 780px; font-size: 20px; margin: 0 0 18px; }
+.badge-row { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 18px; }
+.badge, .trust-badge {
+  display: inline-flex;
+  align-items: center;
+  min-height: 38px;
+  border-radius: 999px;
+  padding: 7px 13px;
+  font-weight: 800;
+}
+.badge { color: var(--ippb-blue); background: #fff; }
+.trust-badge { background: var(--gold); color: #211303; }
+
+.section-title { font-family: "Poppins", sans-serif; font-size: clamp(26px, 4vw, 40px); line-height: 1.18; margin: 0 0 14px; }
+.lead { color: var(--muted); max-width: 760px; margin: 0 0 26px; }
+.grid { display: grid; gap: 18px; }
+.grid.three { grid-template-columns: repeat(3, 1fr); }
+.grid.two { grid-template-columns: repeat(2, 1fr); }
+.card {
+  background: var(--white);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 22px;
+  box-shadow: 0 8px 24px rgba(12, 35, 70, 0.06);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.card:hover { transform: translateY(-3px); box-shadow: var(--shadow); }
+.icon { width: 46px; height: 46px; display: grid; place-items: center; border-radius: 8px; background: #eef4ff; color: var(--ippb-blue); font-size: 24px; margin-bottom: 14px; }
+.card h3 { font-family: "Poppins", sans-serif; margin: 0 0 10px; font-size: 22px; line-height: 1.25; }
+.card p { color: var(--muted); margin: 0 0 18px; }
+.check-list { display: grid; gap: 12px; }
+.check-item { display: flex; gap: 10px; align-items: flex-start; background: var(--white); border: 1px solid var(--line); border-radius: 8px; padding: 14px; }
+.check-item::before { content: "✓"; flex: 0 0 28px; width: 28px; height: 28px; display: grid; place-items: center; border-radius: 50%; background: #e7f5ed; color: #147a3c; font-weight: 900; }
+
+.table-wrap { overflow-x: auto; border: 1px solid var(--line); border-radius: 8px; background: var(--white); box-shadow: 0 8px 24px rgba(12, 35, 70, 0.06); }
+table { border-collapse: collapse; width: 100%; min-width: 760px; font-family: "Roboto", "Noto Sans", sans-serif; }
+th { background: var(--ippb-blue); color: var(--white); text-align: left; }
+th, td { padding: 13px 14px; border-bottom: 1px solid var(--line); vertical-align: top; }
+tbody tr:nth-child(even) { background: #f9fbfe; }
+.highlight-row td { font-weight: 900; color: var(--ippb-red); background: #fff6f6; }
+.timeline { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; margin-bottom: 22px; }
+.timeline-step { background: #eef4ff; border-left: 5px solid var(--ippb-blue); border-radius: 8px; padding: 14px; font-weight: 800; }
+
+.contact-strip { background: var(--ippb-blue); color: var(--white); padding: 25px 18px; }
+.contact-strip .container { display: flex; align-items: center; justify-content: space-between; gap: 16px; flex-wrap: wrap; }
+.whatsapp-float { position: fixed; right: 18px; bottom: 18px; z-index: 40; width: 58px; height: 58px; border-radius: 50%; display: grid; place-items: center; background: #25d366; color: #fff; font-size: 28px; box-shadow: 0 12px 28px rgba(0,0,0,0.22); }
+.site-footer { background: #101827; color: #dce6f7; padding: 34px 18px; }
+.footer-grid { max-width: 1120px; margin: 0 auto; display: grid; grid-template-columns: 1.4fr 1fr 1fr; gap: 24px; }
+.footer-grid h3 { margin: 0 0 8px; color: var(--white); font-family: "Poppins", sans-serif; }
+.footer-grid a { display: block; color: #dce6f7; margin: 6px 0; }
+
+.form { display: grid; gap: 14px; max-width: 620px; }
+.field { display: grid; gap: 6px; font-weight: 800; }
+input, select { min-height: 48px; border: 1px solid #cfd8e6; border-radius: 6px; padding: 10px 12px; background: var(--white); color: var(--text); }
+.notice-box { border: 1px dashed var(--ippb-blue); background: #eef4ff; border-radius: 8px; padding: 18px; }
+
+[data-lang="en"] .hi-only, [data-lang="hi"] .en-only { display: none !important; }
+
+@media (max-width: 900px) {
+  .header-inner { min-height: 82px; }
+  .brand-lockup { min-width: 0; flex: 1; }
+  .ippb-img { width: 112px; height: 66px; }
+  .bajaj-img { width: 40px; height: 40px; }
+  .nav-toggle { display: inline-flex; }
+  .site-nav { position: absolute; left: 0; right: 0; top: 82px; display: none; flex-direction: column; align-items: stretch; background: var(--white); border-bottom: 1px solid var(--line); padding: 10px 18px 16px; }
+  .site-nav.open { display: flex; }
+  .site-nav a { border-bottom-width: 1px; }
+  .header-actions .cta { display: none; }
+  .grid.three, .grid.two, .footer-grid, .timeline { grid-template-columns: 1fr; }
+  .hero { min-height: 680px; }
+  .section { padding: 48px 16px; }
+}
+
+@media (max-width: 480px) {
+  body { font-size: 16px; }
+  .header-inner { padding-inline: 12px; gap: 8px; }
+  .bajaj-img { display: none; }
+  .lang-toggle { padding: 8px; }
+  .hero p, .page-hero p { font-size: 17px; }
+  .hero-actions .btn { width: 100%; }
+  .contact-strip .btn { width: 100%; }
+  th, td { padding: 11px; }
+}
+
+/* Imported plan-detail sections from files.zip */
+.detail-section { padding: 64px 18px; background: var(--bg); }
+.section-label { color: var(--ippb-red); font: 800 13px/1 "Poppins", sans-serif; text-transform: uppercase; letter-spacing: .04em; margin-bottom: 8px; }
+.section-sub { color: var(--muted); max-width: 780px; margin: 0 0 24px; }
+.tab-group { display: flex; flex-wrap: wrap; gap: 10px; margin: 20px 0 24px; }
+.tab-btn { border: 1px solid var(--line); background: var(--white); color: var(--ippb-blue); border-radius: 6px; padding: 11px 16px; font-weight: 800; cursor: pointer; }
+.tab-btn.active { background: var(--ippb-red); border-color: var(--ippb-red); color: var(--white); }
+.tab-content { display: none; }
+.tab-content.active { display: block; }
+.plan-detail-block { background: var(--white); border: 1px solid var(--line); border-radius: 8px; padding: 24px; box-shadow: 0 8px 24px rgba(12, 35, 70, 0.06); }
+.plan-header-row { display: flex; align-items: flex-start; justify-content: space-between; gap: 16px; flex-wrap: wrap; margin-bottom: 18px; }
+.plan-header-row h2 { font-family: "Poppins", sans-serif; font-size: clamp(24px, 3vw, 34px); line-height: 1.2; margin: 0; }
+.plan-header-row h2 span { color: var(--ippb-red); }
+.age-pill, .lock-badge { display: inline-flex; align-items: center; min-height: 38px; border-radius: 999px; padding: 7px 13px; font-weight: 800; background: #fff4dc; color: #3d2600; }
+.features-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; margin: 16px 0 22px; }
+.feature-item { border: 1px solid var(--line); background: #fbfcff; border-radius: 8px; padding: 13px 14px; font-weight: 700; }
+.fi { margin-right: 6px; }
+.table-title { font-weight: 900; margin: 18px 0 10px; color: var(--ippb-blue); }
+.table-wrapper { overflow-x: auto; border: 1px solid var(--line); border-radius: 8px; background: var(--white); }
+.plan-table { min-width: 760px; }
+.table-note { color: var(--muted); font-size: 13px; margin-top: 10px; }
+@media (max-width: 768px) { .features-grid { grid-template-columns: 1fr; } .plan-detail-block { padding: 18px; } }
+
+
+/* Single-file GitHub Pages adjustments */
+.brand-lockup { min-width: 250px; }
+.ippb-img { width: 138px; height: 80px; background: #fff; border-radius: 6px; }
+.bajaj-img { width: 52px; height: 52px; background: #fff; border-radius: 50%; }
+.hero::after { display: none; }
+.site-nav a { scroll-margin-top: 110px; }
+section { scroll-margin-top: 100px; }
+@media (max-width: 480px) { .bajaj-img { display: none; } .brand-lockup { min-width: 0; } }
+
+  
+/* Strong self-contained visual repair for GitHub Pages */
+.site-header { border-bottom: 1px solid var(--line); box-shadow: 0 8px 24px rgba(0, 48, 135, 0.08); }
+.brand-lockup { min-width: 250px !important; gap: 18px !important; }
+.brand-logo { display: block !important; object-fit: contain; flex: 0 0 auto; }
+.ippb-img { width: 150px !important; height: 86px !important; border-radius: 0 !important; background: transparent !important; box-shadow: none !important; }
+.bajaj-img { width: 62px !important; height: 62px !important; border-radius: 0 !important; background: transparent !important; box-shadow: none !important; }
+.hero { min-height: 690px; position: relative; background: linear-gradient(120deg, #173f91 0%, #5b3a79 48%, #d7252a 100%) !important; color: #fff !important; isolation: isolate; }
+.hero::after { display: none !important; }
+.hero .container { position: relative; z-index: 2; max-width: 1180px; }
+.hero h1 { max-width: 980px; color: #fff; font-size: clamp(42px, 6.3vw, 92px); line-height: 1.06; }
+.hero p { color: #fff; text-shadow: 0 1px 1px rgba(0,0,0,.12); }
+.hero .english { color: #fff; opacity: .96; }
+.hero-art { position: absolute; right: clamp(10px, 6vw, 110px); bottom: 0; width: min(45vw, 610px); opacity: .42; z-index: 1; pointer-events: none; }
+.hero-art svg { width: 100%; height: auto; display: block; }
+.page-hero { background: linear-gradient(125deg, #003087 0%, #5b3a79 54%, #d7252a 100%) !important; color: #fff !important; }
+.page-hero h1, .page-hero p { color: #fff !important; }
+.cta { background: #d7252a !important; color: #fff !important; box-shadow: 0 14px 28px rgba(215,37,42,.22) !important; }
+@media (max-width: 900px) { .brand-lockup { min-width: 0 !important; } .ippb-img { width: 118px !important; height: 68px !important; } .bajaj-img { width: 48px !important; height: 48px !important; } .hero-art { width: 78vw; opacity: .22; right: -18vw; } .hero h1 { font-size: clamp(34px, 10vw, 56px); } }
+@media (max-width: 480px) { .bajaj-img { display: block !important; width: 38px !important; height: 38px !important; } .ippb-img { width: 92px !important; height: 54px !important; } .hero { min-height: 660px; } }
+
+  </style>
+</head>
+<body data-lang="hi">
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand-lockup" href="#home" aria-label="IPPB Bajaj Life home">
+        <img class="brand-logo ippb-img" src="data:image/png;base64,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" alt="IPPB logo">
+        <img class="brand-logo bajaj-img" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAioAAAIqCAMAAAA97pGBAAAAyVBMVEX///8TXqwAWKkAWqoNXKvu9Pl/oMwscbbP3u1jib9Jfrzo7vYAVKgAV6n5+/0wdbgAUad7k8ewwNxmlMfW4O7EzuTd6fTG2exxm8tJerkqY7AfZ7GEq9QwaLK1yeKuut26w+KwwdwATaWTqtB8os6bsdNcgr7h5fPU4/Gks9p2jsjO2Omhu9vN0+tVh8C/yORDcrdfgsA+bbWCmcrS1+0+fr2drdiPpNFPdrpBa7V6mcdPhsCnudiMn9GGoctoiMOnxOGStdkARqJzBX0uAAAgAElEQVR4nO2dCUPiusKGaROG0S6ALEqRRVEZxQUQhVGPy/3/P+prSoAmXRLUAs73PveccxFokrYP2ZPmcgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAODbyVsgnby77Xu0G+SPmwWQSuXPtm/SbpD/ZVOQBtn/ve2btBvkf5kGSAOqcKCKCqjCgSoqoAoHqqiAKhyoogKqcKCKCqjCgSoqoAoHqqiAKhyoogKqcKCKCqjCgSoqoAoHqqiAKhyoogKqcKCKCqjCgSoqoAoHqqiAKhyoogKqcKCKCqjCgSoqoAoHqqiAKhyoogKqcKCKCqjCgSoqoAoHqqiAKhyoogKqcKCKCqjCgSoqoAoHqqiAKhyoogKqcKCKCqjCgSoqoAoHqqiAKhyoogKqcKCKCqjCgSoqoAoHqqiAKhyoogKqcKCKCqjCgSoqoAoHqqiAKhyoogKqcKCKCqjCgSoqoAoHqqiAKhyoogKqcKCKCqjCgSoqoAoHqqiAKhyoogKqcKCKCqjCgSoqoApnN1WhlCb+tWmgCmeXVKG+FIQ4DmF/tJZ4/l/ENAkhWzEGqnB2RBVKTcc0vOHw7e3p9bV3eXl5113Q8f/qvb6+XTTGHnFMsuE8Bqpwtq2KX7iYtuMNR+Xey0u3dtPvJz0Au9+f3HVfzsujFrHNDdoCVThbVcW3hIxH5Zd2bVK1NJ+Rbk1qtZerMS+mNgBU4WxNFeqUvNH9waDa15UkhFWtTWelzaQcqnC2ogoxS2Q09SXJfyHh1qDsOBsoiKAKZ+OqUGKXZv8NXHf9vETGtaYtO3NZoApno6qwtrA36n5dkiXupZd1nQWqcDaoCiXesHz33SfQv29lKwtU4WxOFepdXH6hbpLM3SzTU4AqnI2pQluXVkbnMLlwMkw4VOFsTBW7q5WevpXYB5dy0F6GrkAVzuZylcQkuP1qrdY9eDn36V2Vy6/+/78cdG+q+s5k6QpU4WxKFWrG3PjJTfey91q+GI3Hnmc4DNM0/f/axGN9/dNOX/M0BsPMGs1QhbOxXMUsC/Fad4/3e7Nhy6NszJiyQWXh6+wNk3iNclfvPA6MrFyBKpwNtoAuOvN67eRmWm4MW35GQ6jqBhPflq7OeVhvWTWZoQpng/0qbMIJ/5eoJVngf72s03Q68DLKVqAKZ8O9tXPWPMoeVdUn0r/IKFuBKpxtz1fRwhlpVG9fMzoRqML5EaoYzqO64XyZUcUWqnB+hiqGo85Wuq1sooYqnB+iiv2oPJO7MXKVTPkhqpCZ8kygSsb8EFVSxgUWQJWMyVqV77p9p8ozQV0lYzJVhZimE/Tbfz0otSpoAWVMhqrQ1ltnkpvcPF4NW8ZXF3p5yjPpoQsuW7JThY4mi0jcm8e9ofGVdV5kqDoRq4wuuGzJTBU6nAgR+baMzU8XRdK4dAyTGXKVbMkuV5nKUVl3vYvPZi2lmupE7rxvTv8CqMLJTJVWJya2/sG996llXlQ1gTuf1RAQVFmwWVX8rGVwOS6tXVSYV6oxoElGvSpQZUl2dZVIAcRx+3cjZ81KizNQncdLZpNroQonO1Uukkf48oOrtZYbm2+qyU39UWbrxqAKJztV6EtavNbU024PUVNZqe3a2ZyFAVWWZNiv4nXTo+7MPL1+OfNelalYmdVUoMqSDHtriadayN4tDzWmT5LxJD2YXO4yu0wFqizIcgyIEuXa08m0IS/riIRi9FTNn36WO2dAFU62I8t2WVnLmFyOaGqVlLwpZ8BdZXkOUIWT8SQE0ztX3uhq+y1lYzc6VnfUZrm6HaosyHy+Chm9KLfK6NdGSbJQ41J5dHaLUBlQhZP9LDjqvan3abLuGvEdLep+2tw9tuLZCJuYMEm8kbINk8vfDWP2dSN/laZ0shonXCQBqszZzNxaQnUWfXVbcoc/oco1qJNhxpvBQRXOhqZhU3I60thjpzMUms7UuFEd0X/LtE5rQJUlm5uxbzrlgcYawYaxzFlIS7nJoJvZ3IMlUIWzyR0mTWOq3omp/3hhzIsU0uqovu1eZr/HMVThbHYdkDN8UddZ+r0Zaw2RlnpDym5WO2WEgCqcDS8Zo+bbgTJjcSds2FnDlKxWiQlAFc7GVxeaxpOyrppzB1d0qjRlMt5I6w2qzNnCQlQy7Km3YbKq6j7erOboS8mFKnO2sWaZGrPu11Peb+AhLxtlK8vbKaGjr26N3W9s6NlRUIWzpZ0QqGk/fmnD/U3lKVBlyfaeMmZ7N5+XpXqxuY0xocqcLe6vQszyJ/bTD5hk3p0fSiZUmbPNrXioOex8qspS20zbZw5U4Wx31yZqlGvrZyzdTZoCVRZse4MvczjVfeTCgsuMHysmAVU421bFIPQifnVzElNjo6ZAlQVbV4U90vBevylk3X/HdmHrAFU421eF3Y2ZekLlnP5o06ZAlQU7oYrfbtbYGd3nrrX51Kar4kZY/x4khhH9QI+vHJ6czN1QxaCOcg2Hn9asNpFMJVWV2kOhKFB4UO7vIfO7WZQo/Jl/cix/oEXhfX60dVtQf1k+9ji5LrAbqlAyUl/h/v2nNnz6KqmqtJtEonm4hiUBhyU5DJvHeCR/oIPT4He73jDXPtj+teuqkDe1KbXRVkxRqSJ9m35GFTnKpSqfOuE2D7f+iQFVc8dVobSn7FvJv3hbSugPU8U5W9zsf1AVx7tT1gUn91/cIvnz/CxVSHGZ2n9OFWpfKR8353YbG28jL/lZqpjXy3D/NVUIPVDPjLxvbU2UH6aKWVmNv/5bqlBbY4GqvM8osWMWN2fHT1KFNk9W4f5TqpCxevgn/2YLZ0zJ8KbW2mB59JNUIa+hcP8hVUirrMxS3BtqSgf9l2P9+xtM5o9RhZL9P6Fw/xlViHfRVV1E15J63aj3Nl9EZJU3l9DdU4UQMw7aaIfDTVKF0h/VBUfNhnJLwZx1MBOf3kCGj4uD+uVNtZ53ThWzub9XibL3dC5GnaCKaRT39/cb/v8CgheNxYvix66pYo57yu5Zt1b2xFoKDU+Zy+z5PzI7pgo1jtq/61YMcudUrCq0+XRy+DuRw3pyF9c2VCHevXqaZH8q7bFjjsWJuFY5w81qw6ndLVWME93pyHGqkGbt08skNq+K30BWJ9e9vJC2KC1dydP785nuQbpkt1QpvWuHG5urrJ26FRtXxfbu1F7fvHlSluLE7LVi/d3E1MmdUoU86Icbo4p9rT4skQ2r4jgac5j695IotDSLzXX7G9heZbdUsdvpYYWJqkILX1nRuUlVKGlpzKLNPxIpSWSctNHXZNtb8WxaldIak+yiqjhnn1yiF7DJDb40utxyVrcl1VZTe+oOsndll1ShhS+pYl//BFWo2Sqrt+Cx7mby/CUyS9vmKT/NvHtll1QhxX9fFULLGltiD65M+exavfTJ/P23rKu2u6XKGuHGqbJu2sJsRBViXqg32rdqZSMyCkhmqsMGWa9K3SVVaCG5+yzyS4ypqxwnHq3RWbMJVXT2lXTvyrELN1rKFUJb3Th909Vabz+BRnSqfVwLKOnwB41UZ6+K1m613XLCvALypty7tpxtbWWnVDGSxvmM6KNwYvpVkgYKnSeNVnTmqtgj9R7Y3bfECSgaD3mxsp0jt1uqJGDHPIlNfxICKeokOmNViN1VJuFmlLZgnQ6VDadu5Fp/6yn8AFVi07iGKj2ddGaqCiVvqozN7Y4Vz+cme8rMcbS1B9LthirUiGvaaKtC9rRGILNUhbQe0yN3rc7QVp0PpcoiKL+1x1zuhiqkEnevtVVpvmulM8uH54676VH3O3+VogThKIugxwy3htt9VWghdmRIVxVa0euYy/CR3OPUB29Yg6mnOfPeUe6hnp9t6ZHcu6AKNc5iw9VUhTY1NwXJTBVqTFNM6R+U11hY6qkeiup2s+vf331VivXYcDVVcT4005mdKiktl9rlhbFOtE5Zla1kuN/+rqtCnYSJCXqqONrDSpmpYu4lJCHfeRrT9dbxUFO5VvUluyrXTqkS7kQLpunbzknChY7rghP64PyjndNn5aVdkJ0qT7HxTaYXnrl2YeH8p1K/mlm2sluqhPfNuT3yuU4cM4np2G+GNucpFCtHR2c1/Y2DM1MlrrGevxy11sxQ5lBPWbGdZtUI2iVVaDGvvyFXVBWzssbhEbJrAXnyItObEY3MMdClpBxvPMhq869dUuWL81Wco92cr2JerAaF3Xz/0St9oYhwpqoTmWRVAkEVTpZdcMM7y8rn81Z/8jizv7Y7F3lTnYi1l1VJClXmZNmxT81ZeTr9bzY2v7yLm3qKU+41o8rKeqoYTVUfUITNqWJq9svGk+3IMiGOY35H7xj9qzyT3k4UQIa5xvKLOZtThRR/yuKOL6ChSlab2qaqcliQI3ViZo6kszlVKP3Kxt4/RRV1AbQdVaK/3IJ2n9YijI2pYpi3a6YtzA9RhVwpz2Qrqvzej9wO8rzm47A2qIpBK+ulLcwPUaXUVZ7JVlT5cxuz20Dxfa1bsFFVyF782KIGP0MV2lLXx8630QVnVWIuH3WM52MNeLibVIW1NB7EVFwfhtmx/VXWJ24fBJmtNJZzvfhY/ZafCns/tw1V/IxFSkcpxGnK1P0foQpVTkLIcJlhuirvzU9nZou+ug2rksrObBtIaTBwTula1QpilDUqirWslnikq1KPqaxoYR8tgoAqMtR0xqO3ss9o1qKOQzS75pzxo4Ypbi+r81A8Zaz3udo0KSxPCqpIUHp1UKv22f521UmtdjB9G9KSY6ZPSaDE9u7VS85yW5uv8rkbYgh76kAVCVt6+na+Xx3UplczYtt+/hK3lSIxbWd2WdXqpXAftzMLzqf9mQk4TmV1S6CKRCv2DltWvdopjzynZNvOauNex7ZLZHbfqUZ22ExgkN2WPMrHXH6crh2mMEseqohQM/mcXDeft+46j1dLHjt3+fwaU7Ty4+x2zlA/EfVYZzWTQOk8dG5QRU6Eumv+07izDE9C4+G5h02y1l0xb8NdplBFxil/5sGyOliZPqtO5znL7kejSUl8nUvG/95z+KkJUCUmGeOO9ZX5EklncONlV/oYuo/kzrefLhoFo2k4QV1rWemKvCDN4pM4DHN4Kn+ntFBFPtxeb9tAOyUd8S9Ku6GKQZzWtFb9Xlvc/jTjhy9rP709/7v98dH7lc7r67W8FVf9Sf7OwqX3yOHHa6hiqdISw9PJbqjCBtLIeNquyVugf57+y2ir2wb+f2LTY0CUddru9V7u1p0AFMeks5e2i8/3AFU42xgupMQ0xqOnXudmzUlAAlbndWasv1BxbaAKZ1uPjvJzF6M1vChPOzefqbz0O/cXLbKRJxhCFc5WJyH47UbD84W5euyot1RfMuncN8Yezbzk4UAVztbnq9DF4v7xrHx/d5Na4e13H69mwZc3+Cx3qMLZuiocv0Ri44P26an99+/foHf/v07A5X/sD//N0mnJZquKNvx4bqjC2RVVVsylmY8ZBsyf9rlpQ5ZAFc7uqbJrQBUOVFEBVThQRQVU4UAVFVCFA1VUQBUOVFEBVThQRQVU4UAVFVCFA1VUQBUOVFEBVThQRQVU4UAVFVCFA1VUQBUOVFEBVThQRQVU4UAVFVCFA1VUQBUOVFEBVThQRQVU4UAVFVCFA1VUQBUOVFEBVThQRQVU4UAVFVCFA1VUQBUOVFEBVThQRQVU4UAVFVCFA1VUQBUOVFEBVThQRQVU4UAVFVCFA1VUQBUOVFEBVThQRQVU4UAVFVCFA1VUQBUOVFEBVThQRQVU4UAVFVCFA1VUQBUOVFEBVThQRQVU4UAVFVCFA1VUQBUOVFEBVThQRQVU4UAVFVCFA1VUQBUOVFEBVThQRQVU4UAVFVCFE1GFasGeX2soHjwZc9j6N0p9+DdEkhoNVOFEVBmVNbjav2gMWx5JfSx280066k0lV8wtDCfnzYv7hnElRTNaPxovHM1IjAaqcCRVqNfRPbDfvXy6aJHE20LKlnzI1dqFnX0XOr4ap4p5Lz/Fu3+x9oPdW+Fo7sbieUCVOZ9WJaDffR0myEKGtcjXa611f+9KVeiwH4mmG6dUKq1u+PCWeCJQZc7XVMnl3Ek5Nr+nxjQmsul3q0JJR85U/DSV140GqmjwVVVyOWsa5wppyMUPozpaswhSqWLuxUXTXzf3gioafF0V/0ccrRtQoxv73U4r8tVUFKpQoZKx4tFeLxqoosE3qJJzoz9iMkqIbm+9KqdCFfM1IUlrNpmhigbfoUru0ZEuPbWjlc05N+uVDemqkEY1IZrJetkKVNEgXRU3HjkQ91S69E5MnZZz/32qUO8yMZr12uVQRYNUVfqz/53G4I3uJFsc8f7TcUqEs3WKoFRVyFu09bOMprVONFBFg3RVEjqzTHIp3qS/giqUCJXNfFX4clcurdJIVaV1I0QzCEfjdsw1si+oosGnVDHIbCKE4gm3RepAvZmJnXFva5QNaao4/wnBdmdC/ch6WyNbgSoafE4VcyTWJ4VKpNSB6pbte6Hzo7/Gzz1FFdoSQrX2SmIFaZ2uYaiiwSdUodRpiX2kNyXh4xexwDGpJ/Z+dPSLoBRVbDHQF4M6g/Abbk8/94IqGqhVoY7REvDG9zWxqjIKGyV1oOaH1CAj8S39mm2yKqZYp+03iJ/XCamqNrSjgSoaKFUhra4lkxfDuAx3eMkdqFMWviPlQtpVzpRcRSzlHlk0dldMl/awIVTRQKUK9fKJx3JuxuEb7/wSrLDMebBCKPl73R6yRFVssQ3WDyrWZCgkzN3TLYKgigYqVUqTxEM5HS+cz9OG2E/Lu8LMe+Hd6kwzW0lShczEIq08j4aKjSJRYqjyNRSq2OXUo9384ErsfpMGBu4WZVNJbDIdaA7SJOYqYvu7xnMpOhTN1p30AFU0UKjixY3xr5i8maIpZE8oF9xlE4rMhAOtmNHoNVQxp2KBtsw9qNilYw31ooEqGqSrMlIMHk4u94TiR+pA9SuWS5FKYm23plc2xKtCZgMxmmXVh47FaDS7hqGKBumqPCrrtFanEZoxKQ0ThvtlyFAIy73XKoJiVZGHCa2QD/KMXr2uYaiiQaoqeaUpPv03ujpa1KEXnh9HH8XDGp9WhbyJOtyHsw7vQIwGqnwXqapY509xvHbFCsGyB87pCmEPWDuHOBy7JVY5OzprMOJUkXtubvy3qbmIpjQSm2CXOu1yqKKBoq5iOzHQllir7PODzZmgUH7qK2SPLpdI7W6dPttYVaRW2R4xKL16XEYjqmLpRANVNPjUcCGl50IgvFfDEW/SIJgNt7Insl6nFBu4ShXaEqPpeH49aLCabyVHU3PUuRdU0eCTkxDEkeVJcNPlDtSRadCkeZMB9+rmidBVP1fFlOs8RJZHOsOpOhqoosH3zFdhP1xpTDB3YlPnMXmaGkM9U60UbnwHqkgdNLkepU7yvMngMGXnitjEhirxfHK+itQkDWbBiR2o/TGho/QOvNydatiQOuGvB6qYoqSTGZXlkXFfFKYY5CKcUKgSj5YqdPmf4AU1pY4upgoR5y+xpThe/CKdFW5QyQltqSC+oKbYwGaqSD037tQ0HLHbL0o/WFFCY+MIohHKH6iSgIYqpuNJlKX5Kjka6UAdmIZ5r+yWGYz91ktLDn5B66IjhOCrQseikLUWleZNxhF0DSdHM5J6eKFKLBqq3J/UJORyxTo1DGli9shMXqSzwu2YBrmSg18i1VZrjkG7YsRlUxpjjo/mnvrN6YFmNJfiTGGowlHOVyFddZftpSN3oN7Z1HjrdKN0RH/6b4QOdfqEc2z6kuOIGZXboZRcxUXTlaLxm0kXaqXmvIodvFCFo1LFTm9dzBma8trhIcvxY5HqoF1PpwQJsGbkr1inZTMvaXw0e+Kxj356enrRVEcUqsShUMX5qxHGIyFSB+ojGwuMb91I7rmvJrWV06cCOo59LpZywQLY2GgiC2pHlA5V1d85LwZUiUWhSim1D23OXYuI6yxy/ZSeDFoSb/dkRtIWI4YCpeabmJp+Sn8JkWbj9W1KyjolXWRNCFThpKvS+C+9Dy3HtlehRO4DS12XbEo50KVnELEDNj6hfyOl3ChFFUql8uY/PwfSWLof3QEGqnDSVYls5yYfbd3N/FZxQ3z3LnXaEqVieWP5deeYXbqkiG48kz6J3t6kjhkTqbxxx8S8ULXJrLtoBzJU4aRPQki+g65l9Qe16dj0K5aGNJarmAxJpVXpNy2DjAbJhYNrVe/KfmtX6rlxFVO5iTj8zab5OnuTlGj6g7u3mO5jqMKRNyP1yicHPif8vycH/ovgNf/vQfDOwUnv/mrkOcGgLR2L3RRT1c5Mzek80MU/Q/9+jKfLmE6WscwT0rsaB7vkXojRPCpioa3eMu0snBeP+lnN9GQVtHBCJ723sRM30ABVOLIq1LS1cMzVZZV6PxW3kI3siGHR9HgXN3DdaAwxGkcVTdJWmVBlzrdsnE7n/9L5cM6ntqPWjWcVR3bRiEAVDvbYVwFVOFBFBVThQBUVUIUDVVRAFQ5UUQFVOFBFBVThQBUVUIUDVVRAFQ5UUQFVOFBFBVThQBUVUIUDVVRAFU7+l01AGg5UmZO/3gPp/Kpv+yYBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACwy+Sr1WrsMwrq1eriuR2u/1qiPn+kghX5ID6wIIxBQDXuaSB5/uki3JhERgJOTPk8YYO0AKOhc6y6FXuAFZ96P91SGlwr9bpV1cnZVdzrQrN4HfNBdb9ZOOLnfFhsFkSat8HzUqyK/EGhcBx3+9zB+W3TLvk4zcqBfL3q7V8PBvuw1Hw+H0QvZv6jWCgUr6UPjv2Ut+PPqt6uFOcBFm6vlXfnbJX44t7t0Xn7t3xE9aBSCFJvFyov4SfFtIvNovjgofqRf3H48YfPkctTfFckZnfJ/7Kp8xDzwXuJkibfLuKkRGVOgwdw96MfmHF7TNR7heXTDqjj7F8Lv83aHnH4c2EocYq9SLbTbpp+wIVD8V2DUDv+eYS1W9vk0VGT7J8rni7mB7SAEGI6ZL8nnEP+5NZ0Fqk3nf33ZXj5V5tSR0jX74ZJT/nhx5GrQ53n9LTsMGwrHlKM+aBtG7TAf0An7CFN4imXAlXqpcgHzv6fSFj1isFUIA5/PgYxKqGf5kmBPZrDv0X8Q7In7VLhvs6f3C15wR7QHatKu2AG0vGHfhDjLN2V+TM9OMFLcz+UXeXPm0G6zEXqm71FeMFGRmQ/HPzvfWKUuDxnRvTy/H9QRcxIH4IfDlOFForCJx+R+2JV2A1wjNvj6+vjW8KeTUn2lllHu0CYRcWjj+uPW+qwbOdWDKK6H+Q5skJJqtSKfnQmffZj+6gEASpc8X2ivKQoNm07sLq4zCrc6yZLoL1/5qf+2WEWeotznO95Rc5CgUVU+YcKID1VaDEvEhTHTBV7EPNBGPfcv9T09MzKuz5565b5RY759/48sxtReM+zT/P1I/YTdz6EAE6C37qfHLFmkqBK/on90m+rPDYWIDVTN17yVXF6i+TX2/ssCSsvB8wUp8DDqz7bzL3a6uqxhIWKIEkV0vituDw/Bl1VYr8TqFJSPRCw7mcb1F5dTfeYFVuEH3bu5+mksMwv3HN2a0vh6kr+yE9ipUAN81W4zgmqtP1vklU27177d9O8TbtDTJXz0N/vwTOHeF0/X2HHP6yOf/bzKacyTyDfSY/srXItWZX9f2bPp+xVca/9Lznv4XfY1XeOgqv/55bl96EfvXvOPgxn6YMmNezfH7a8gV+CKi/+rSyFfub+vaZGaR1Vctd+NmbybIWdIimED38gLCudhz1XJfz4VajyeVXyfglDHoTKQtUwiTO//O2m/5uthD9k15o2V3+71yx2N+/nNuQg/MUkVfwS4jT8Rs2/mfZaqjAbaGFeyPixG45Q8lXZO/PyM1CFsmyxFk4+VImio4rFqrQfwq3Kf1zcXpwFb7EbWxJam+6r41dlVmpZ/n2z/eP9rMg8ChdMaaqEo7OuPz4+1lPl3T95I/CD5YC0INxuq+i7P695s6tHm/53FyUSVPmKKlX2nZr4nluv1+fXOvBC/PDF/52S1e/4kDVQ/TgO/QQ1w8/PTVDlgJUPH9H3k4mqkj/1w3gJUsrqSEdCnpg/89PcDNQIrt7zMRNr0UEIVT6vCguIJn3HOmI/WukAVi9ddiC7/jdM9ptlN805D+UOCarU/O9RubsulagqOb9QcV6ZIHkqxTovEamzUuUhz7KZIq9HQZXPq8Iy82bSd+p+rZZIvVKHxbAqQfl14r9wWcX2OVQCJahisUozKZzrb0wco4rfaHN+Baqw/EUaPqixQnOlSjF3yDpyKvOsB6qkqKK4Fu+hgKIB+KqYR+J7hw0SUiWo1AaHV1m3eqgESuqCC/r0qNE4uta8SzGqFAVVpOJzUJJUcVkRxJMsq3IRNzr6I9HvgvsThp9/0Fvb2A/TkyuQgipuXQyCqSK0jHOyKqzYmYeZDyq2q+CTO/a9oGOfNId7Hzo36suq5OpBqy3IViRVaLMRuj6N/YTxzZ+Afsd+U3h0+vyU52NAwo70t/JPWVClR5dBBKV9oiqLnMaPgbdF/CSx2FY1zERVcn8eSibrRvMrxM3GtWKwMEkVcw1VcjUWxi17S+7Yp+KG/T93CGid4UKDPzid/WufBB+sq4pVcRajcrTEBEhUZdHVwnKSCg+yWiThtk2yKn4YFc9PF0sxsemRoiD6eq4StOSMU3ZG0eFCQub/MMzYcvxnoK2K+OsozTvD5sOFjRDDJ/lHHFYl/4suH55ip6qyeI91my9uY/7YCac1TRX/y/iNwkYAAAY4SURBVO+VRpMG44yOkZ6zfIMquT+sCDKsqCqeeHmO0xKy22jXVZq3AvPqZTBc2K6HidwUoQA6PGZ8HLG++lRVeF3lmoQHeVm/6+lyjkO6Kj5W+9dF0wkywTW74NZXJXfinxKpuNHhwsPw1YlO0Pg56FdrrRghdBvLcgvodyGkitivL6rC2tKrDjArqNgu/lKqwsJ/fyoEwzRp/Szfokr+l180N9/RWP5av4oh96sMmqECiEqT8GqrfpXf/k/VqLSXVFiBssggdFTx21ztPSIPM0nE9avQsCoH4odtNnQgq5L702Aj2nWo8qXeWsOWvlNzeH+MdeQIY4PBAb5H5D14eczq0V5ziUdDg9R6qvhesplRNOULMarYiz5al9V1xOnC7gebnBVRJXfNavy9Q6jyaVXq7Hd5Ir53sBjSc3v+ZbfFD1/8jIYEF9sKpr+tasLBy2XnbrwqrhWpL5070lizRFQVq7TIS4IxoIrQO5MPRhCjqrhsCL1wBlU+P7LcpMte70WkbOSnGRQkB448spx/8jMak89QCObahmAt9cXk8HhVBo3hsCi6ciBPS5CIHVk2mquR5aY4srw6IfHqWSU289L/FKpE0Zqv4nthiBe72lxObWI2UCHsQzZaOB9BfPJvE30ohiiwTJ43OONVaZ8SaotNUpar/C8lhVFViquGF5uvYr8LMbB3PpbzVUJXhk3iYkCVKFoTJtnomjBj0Xowl/PI6ntscC80Z6BeYUVSUKtlNUQi1Uf9OippzDONeFV+s+mZpXC28ud56V48EVU+WEX41zwMNlxpmKFzrAejBvM35Kv3bEKVr6hi3TIzKosJyK71EMxO5XfzhfUBN98XJtUrrLtvXjixeiKRWrnvfi7kN0kZ8aqwaQ2+Gas1gkGITpDPWB9HR0fR9XGiKq51zDqTm7zZw2anGMRYrDtz62ydymKOlXz1rCbRUsW99hOiWHKycwTzuArCUslBn10WbVXsE/Ho6GK+djDnvfherVtWvXrdDO7lYojYYm1ZSiqH/odW9aTIWhdOcDtZL0okN6gP/SziKXjpq2I+SXHnWAHGlgA0rwcswHr1hIlJ5rXQtuGYjhMZQWSq/FoEcXI2X0W07M35HQxU2x/z1H+QIPTD1dUTrsx7sFItPFzYaEeTmPvdsE3HeE+7MbvHfHZoKcxpkf0QtFUxbPHo6KwituaKLfVp7lf29inrPjWbJ0uhgltLTVq8rdw22SIcSufVGFZpiU5nO6KL6dgeKxmEuEtscNc9aQb3lj7cVirFIEQyr6IGzXBqRHpM2boyZxGEzf4yzOfldBf3vcXCc2ixUtk3goUfzcWUt4gqwWQZcbhQvjzBqTXYSPR78m3ZRfic8zBzQ/RVkWhGx9nzfk4StHPNYH0odRrtUNZT27eDUUhiBk1jky/wYu1oakeygENKaTPIdbxI1NRjGrjtIouNEhadEUTHb22KKkIwJv0VXkPwXghGBxapN5vLIaVo8R2ILwwXymEH3/qRqjyVTAkn6Fttn/ov+AU7ODXtBFXkg/2DYqZkuLUjwpYRB4ua7WZPrN5Ujwslk694dsjtCa9PVkpm6TYaVsE2S6/sRdOJxD3vGMtVz5olHhvxozteLFdvs0OcSBWBrgJybJ9CpSb2uQ2ODJ56PzhydLj03O2VTFvobHY/iGP+j9dPjiNXx3QCVX5kAZQ7PKrIBMu3rWP+wqd/VqnEDqK415GDK/GziazqRyVYsPpwdBKz/cXB0UOwTrPSqy13nKgdVc5i6oS/zypHQWJq0ZS3lwGeHO0HAT6Ho7NYck8iIbZXAZ1dXx/EbOuRr17PU1+sfAifVs8qZ+KVsa6PKouac/04enneg3NjUUZX7O44bj6Cu/hg+evx31zz6LivWgGxX4j70E2Idfl2NG7hWzHRufHpC6fejU9/UuqjaQxft7SL+4OXpAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAID1+D+UbnGD3/L8tgAAAABJRU5ErkJggg==" alt="Bajaj Life logo">
+      </a>
+      <button class="nav-toggle" type="button" aria-label="मेन्यू खोलें" aria-expanded="false">?</button>
+      <nav class="site-nav" aria-label="Primary navigation">
+        <a href="#home">Home</a>
+        <a href="#life">Life Insurance</a>
+        <a href="#term">Term Plan</a>
+        <a href="#market">Market Plans</a>
+        <a href="#health">Health Plan</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <div class="header-actions">
+        <button class="lang-toggle" type="button" aria-label="Language toggle">HI | EN</button>
+        <a class="cta" href="#contact">संपर्क करें / Contact Us</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+<section id="home" class="hero"><div class="container"><h1>अपना और परिवार का भविष्य सुरक्षित करें</h1><p>इंडिया पोस्ट पेमेंट्स बैंक और बजाज लाइफ की विश्वसनीय योजनाएं</p><p class="english">Secure your family’s future with trusted insurance and savings plans from IPPB and Bajaj Life.</p><div class="hero-actions"><a class="btn light" href="#life">योजना देखें / View Plans</a><a class="btn" href="#contact">अभी संपर्क करें / Contact Now</a></div></div><div class="hero-art" aria-hidden="true"><svg viewBox="0 0 720 560" role="img"><g opacity="0.95"><path d="M90 230h390v245H90z" fill="#fff"/><path d="M70 210h430l-44-78H114z" fill="#f5a623"/><path d="M120 260h95v88h-95zM260 260h95v88h-95z" fill="#003087" opacity="0.82"/><path d="M393 260h54v215h-54z" fill="#d7252a"/><path d="M126 150h205v42H126z" fill="#d7252a"/><text x="151" y="180" font-family="Arial, sans-serif" font-size="28" font-weight="700" fill="#fff">POST</text><path d="M575 232c50 28 83 72 83 122 0 86-83 136-83 136s-83-50-83-136c0-50 33-94 83-122z" fill="#d7252a" opacity="0.92"/><path d="M535 352c19 18 38 36 38 36s48-55 79-86" fill="none" stroke="#fff" stroke-width="22" stroke-linecap="round" stroke-linejoin="round"/><circle cx="219" cy="430" r="34" fill="#003087"/><circle cx="303" cy="430" r="34" fill="#003087"/><path d="M165 510c8-47 38-72 72-72s64 25 72 72M255 510c8-47 38-72 72-72 33 0 62 25 72 72" fill="none" stroke="#003087" stroke-width="28" stroke-linecap="round" opacity="0.72"/></g></svg></div></section><section class="section alt"><div class="container"><h2 class="section-title">लोकप्रिय योजनाएं</h2><p class="lead">गारंटीड लाभ, बीमा सुरक्षा और आसान संपर्क के साथ योजनाएं देखें।</p><div class="grid three"><article class="card"><div class="icon">₹</div><h3>GWG – गारंटीड वेल्थ गोल</h3><p>Life Insurance plan with regular assured income and return of premium options.</p><a class="btn secondary" href="#life">और जानें / Know More</a></article><article class="card"><div class="icon">20</div><h3>गोल सुरक्षा गारंटीड रिटर्न्स – 20 वर्ष</h3><p>Longer policy period for guaranteed maturity benefits up to 20 years.</p><a class="btn secondary" href="#market">और जानें / Know More</a></article><article class="card"><div class="icon">🛡️</div><h3>eTouch II + Super Women Term</h3><p>₹50 लाख से शुरू टर्म बीमा, ROP विकल्प और गंभीर बीमारी राइडर।</p><a class="btn secondary" href="#term">और जानें / Know More</a></article></div></div></section><section class="section"><div class="container"><h2 class="section-title">विश्वास के कारण</h2><div class="badge-row"><span class="trust-badge">बिना मेडिकल जांच के</span><span class="trust-badge">धारा 80C में छूट</span><span class="trust-badge">मृत्यु दावे स्वीकार</span><span class="trust-badge">एक्सीडेंट + कोविड दावे</span></div></div></section><section class="contact-strip"><div class="container"><strong>WhatsApp संपर्क: 9992997558</strong><span>अधिक जानकारी के लिए अपने नजदीकी आईपीपीबी शाखा में संपर्क करें</span><a class="btn light" href="#contact">Contact</a></div></section>
+<section id="life" class="page-hero"><div class="container"><h1>गारंटीड वेल्थ गोल (GWG) — एश्योर्ड इनकम योजना</h1><p>बीमा सुरक्षा के साथ जीवन के साथ भी और जीवन के बाद भी नियमित आय</p><div class="badge-row"><span class="badge">प्रवेश आयु: 6 वर्ष से 60 वर्ष तक</span></div></div></section><section class="section"><div class="container"><h2 class="section-title">मुख्य विशेषताएं</h2><div class="check-list"><div class="check-item">गारंटीड योजना लाभ</div><div class="check-item">प्रीमियम शुरुआत वार्षिक ₹30,000 से — अधिकतम कोई सीमा नहीं</div><div class="check-item">प्रीमियम भुगतान अवधि: 8, 10, 12 वर्ष के विकल्प</div><div class="check-item">आय भुगतान विलंबित (0–8 वर्ष डिफर) रखने का विकल्प</div><div class="check-item">प्रीमियम भुगतान के पश्चात् 15, 20, 25, 30, 35 व 40 वर्ष तक नियमित गारंटीड आय</div><div class="check-item">योजना पूर्ण होने पर ROP मूलधन के साथ 100%–300% मैच्योरिटी बेनिफिट का विकल्प</div><div class="check-item">बिना मेडिकल परीक्षण के आसानी से जारी</div><div class="check-item">धारा 80C के अंतर्गत आयकर छूट</div><div class="check-item">मृत्यु होने पर नॉमिनी को नियमित आय जारी रहेगी और ROP मूलधन वापसी</div><div class="check-item">एक्सीडेंट, नॉर्मल मृत्यु व मृत्यु दावे स्वीकार</div></div></div></section><section class="section alt"><div class="container"><h2 class="section-title">30 वर्ष आयु समूह का उदाहरण</h2><div class="timeline"><div class="timeline-step">10 साल प्रीमियम</div><div class="timeline-step">2 साल स्थगन</div><div class="timeline-step">25 साल आय</div><div class="timeline-step">अंत में ROP</div></div><div class="table-wrap"><table><tbody><tr><th>Parameter</th><th>Value</th></tr><tr><td>प्रीमियम भुगतान अवधि</td><td>10 साल</td></tr><tr><td>पॉलिसी अवधि</td><td>12 साल</td></tr><tr><td>आय अवधि</td><td>25 साल</td></tr><tr><td>स्थगन अवधि</td><td>2 साल</td></tr><tr><td>वार्षिक प्रीमियम</td><td>₹1,00,000</td></tr><tr><td>कुल प्रीमियम</td><td>₹10,00,000</td></tr><tr><td>वार्षिक आय (13–25 वर्ष)</td><td>₹99,322</td></tr><tr><td>25 साल में कुल आय</td><td>₹24,83,050</td></tr><tr><td>आय अवधि के अंत में ROP</td><td>₹10,00,000</td></tr><tr class="highlight-row"><td>कुल लाभ</td><td>₹34,83,050</td></tr><tr><td>मृत्यु पर नॉमिनी आय</td><td>₹95,000 × 25 = ₹23,75,000</td></tr><tr><td>ब्याज दर</td><td>8.25%</td></tr><tr><td>OR एकमुश्त विकल्प</td><td>₹10,00,000</td></tr></tbody></table></div></div></section><section class="contact-strip"><div class="container"><strong>अधिक जानकारी के लिए संपर्क करें</strong><a class="btn light" href="#contact">Contact Us</a></div></section>
+<section id="term" class="section">
+  <div class="container">
+    <div class="section-label">Term Insurance</div>
+    <div class="section-title">टर्म बीमा योजनाएं</div>
+    <p class="section-sub">IPPB × Bajaj Life की दो विशेष टर्म योजनाएं — सभी के लिए और केवल महिलाओं के लिए</p>
+
+    <div class="tab-group">
+      <button class="tab-btn active" onclick="showTab('etouch')">eTouch II — सभी के लिए</button>
+      <button class="tab-btn" onclick="showTab('women')">Super Women Term Plan</button>
+    </div>
+
+    <!-- eTouch II -->
+    <div class="tab-content active" id="tab-etouch">
+      <div class="plan-detail-block">
+        <div class="plan-header-row">
+          <h2><span>eTouch II</span> टर्म इंश्योरेन्स</h2>
+          <div class="age-pill">प्रवेश आयु: 18 – 85 वर्ष</div>
+        </div>
+        <div class="features-grid">
+          <div class="feature-item"><span class="fi">🛡️</span> टर्म बीमा ₹50 लाख से शुरुआत</div>
+          <div class="feature-item"><span class="fi">📚</span> अनिवार्य साक्षरता: 12th पास से शुरुआत</div>
+          <div class="feature-item"><span class="fi">💳</span> लिमिटेड प्रीमियम व रेगुलर प्रीमियम का विकल्प</div>
+          <div class="feature-item"><span class="fi">🏥</span> 60 तरह की गंभीर बीमारियों का राइडर कवर</div>
+          <div class="feature-item"><span class="fi">🎁</span> पहली बार खरीदने पर 5% डिस्काउंट + सैलरीड 5% डिस्काउंट</div>
+          <div class="feature-item"><span class="fi">🌴</span> 0–3 वर्ष तक प्रीमियम हॉलीडेज का फायदा</div>
+          <div class="feature-item"><span class="fi">🔄</span> ROP: प्रीमियम की वापसी परिपक्वता लाभ के रूप में</div>
+          <div class="feature-item"><span class="fi">🚑</span> एक्सीडेंट, नॉर्मल मृत्यु व COVID-19 दावे स्वीकार</div>
+        </div>
+
+        <p class="table-title">एक उदाहरण — 65 वर्ष तक के कवर के लिए (वार्षिक प्रीमियम ₹)</p>
+        <div class="table-wrapper">
+          <table class="plan-table">
+            <thead>
+              <tr>
+                <th>आयु वर्ष</th>
+                <th>प्रीमियम भुगतान अवधि</th>
+                <th>50 लाख (60 बीमारी राइडर)</th>
+                <th>50 लाख ROP के बिना</th>
+                <th>50 लाख ROP के साथ</th>
+                <th>1 करोड़ (60 बीमारी राइडर)</th>
+                <th>1 करोड़ ROP के बिना</th>
+                <th>1 करोड़ ROP के साथ</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>18</td><td>47</td><td>1,700</td><td>8,482</td><td>10,413</td><td>1,700</td><td>10,295</td><td>17,575</td></tr>
+              <tr><td>25</td><td>40</td><td>1,700</td><td>8,839</td><td>13,992</td><td>1,700</td><td>10,748</td><td>18,410</td></tr>
+              <tr><td>30</td><td>35</td><td>2,730</td><td>10,556</td><td>17,174</td><td>2,730</td><td>13,665</td><td>23,560</td></tr>
+              <tr><td>35</td><td>30</td><td>4,730</td><td>14,250</td><td>23,818</td><td>4,730</td><td>18,198</td><td>33,652</td></tr>
+              <tr><td>40</td><td>25</td><td>7,940</td><td>20,316</td><td>35,178</td><td>8,297</td><td>26,187</td><td>49,681</td></tr>
+              <tr><td>45</td><td>20</td><td>12,620</td><td>29,684</td><td>57,153</td><td>12,620</td><td>40,184</td><td>84,415</td></tr>
+              <tr><td>50</td><td>15</td><td>17,260</td><td>39,855</td><td>88,809</td><td>17,260</td><td>55,893</td><td>1,36,057</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="table-note">* सभी प्रीमियम राशि वार्षिक (Annual) हैं। GST अतिरिक्त लागू। अधिक जानकारी के लिए संपर्क करें।</p>
+      </div>
+    </div>
+
+    <!-- Super Women -->
+    <div class="tab-content" id="tab-women">
+      <div class="plan-detail-block">
+        <div class="plan-header-row">
+          <h2><span>Super Women</span> Term Plan — केवल महिलाओं के लिए</h2>
+          <div class="age-pill">प्रवेश आयु: 18 – 85 वर्ष</div>
+        </div>
+        <p style="background: rgba(200,16,46,0.06); border-left: 4px solid var(--ippb-red); padding: 12px 16px; border-radius: 0 10px 10px 0; margin-bottom: 20px; font-size: 14px; line-height: 1.7;">
+          इंडिया पोस्ट पेमेंट्स बैंक व बजाज लाइफ ने केवल महिलाओ के लिए खास टर्म इंश्योरेन्स (सुपर वुमन टर्म प्लान) बीमा योजना आरंभ की है। इस बीमा योजना को 18 वर्ष से 85 वर्ष की आयु की सभी महिलाएं अपनी या अपने पति की वार्षिक आय से भी शुरुवात कर सकती हैं।
+        </p>
+        <div class="features-grid">
+          <div class="feature-item"><span class="fi">👩</span> केवल महिलाओं के लिए विशेष योजना</div>
+          <div class="feature-item"><span class="fi">🛡️</span> टर्म बीमा ₹50 लाख से शुरुआत</div>
+          <div class="feature-item"><span class="fi">💑</span> पति की ₹5 लाख + ₹1 करोड़ आय पर सुपर वुमन टर्म शुरू</div>
+          <div class="feature-item"><span class="fi">🏥</span> 60 तरह की गंभीर बीमारियों का राइडर कवर</div>
+          <div class="feature-item"><span class="fi">👶</span> Child Rider: दोनों बच्चों को 25 वर्ष तक आय का फायदा</div>
+          <div class="feature-item"><span class="fi">🌴</span> 0–3 वर्ष तक प्रीमियम हॉलीडेज का फायदा</div>
+          <div class="feature-item"><span class="fi">🎁</span> पहली बार खरीदने पर 5% + सैलरीड 5% डिस्काउंट</div>
+          <div class="feature-item"><span class="fi">🚑</span> एक्सीडेंट, नॉर्मल मृत्यु व Covid-19 दावे स्वीकार</div>
+        </div>
+
+        <p class="table-title">एक उदाहरण — 65 वर्ष तक के कवर के लिए (वार्षिक प्रीमियम ₹)</p>
+        <div class="table-wrapper">
+          <table class="plan-table">
+            <thead>
+              <tr>
+                <th>आयु वर्ष</th>
+                <th>प्रीमियम भुगतान अवधि</th>
+                <th>50 लाख (ROP के बिना)</th>
+                <th>Child Rider 10 लाख</th>
+                <th>60 गंभीर बीमार 5 लाख</th>
+                <th>कुल प्रीमियम</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>18</td><td>47</td><td>6,005</td><td>432</td><td>545</td><td>6,982</td></tr>
+              <tr><td>25</td><td>40</td><td>6,217</td><td>695</td><td>443</td><td>7,355</td></tr>
+              <tr><td>30</td><td>35</td><td>6,955</td><td>470</td><td>990</td><td>8,414</td></tr>
+              <tr><td>35</td><td>30</td><td>8,241</td><td>545</td><td>1,475</td><td>10,261</td></tr>
+              <tr><td>40</td><td>25</td><td>10,288</td><td>719</td><td>2,170</td><td>13,177</td></tr>
+              <tr><td>45</td><td>20</td><td>12,974</td><td>—</td><td>3,120</td><td>16,094</td></tr>
+              <tr><td>50</td><td>15</td><td>18,570</td><td>—</td><td>3,910</td><td>22,480</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="table-note">* सभी प्रीमियम वार्षिक (Annual) हैं। GST अतिरिक्त। अधिक जानकारी के लिए संपर्क करें।</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ MARKET / GOAL SURAKSHA ══════════ -->
+<section class="contact-strip"><div class="container"><strong>Term Plan information</strong><a class="btn light" href="#contact">Contact Us</a></div></section>
+<section id="market" class="detail-section">
+  <div class="container">
+    <div class="section-label">Market-Based Investment Plan</div>
+    <div class="section-title">गोल सुरक्षा गारंटीड रिटर्न्स योजना</div>
+    <p class="section-sub">कम समय के निवेश पर अधिक लाभ — 15 या 20 वर्ष की पॉलिसी अवधि चुनें।</p>
+
+    <div class="lock-badge">🔒 Minimum 5 Year Lock-in | आयु: 18 – 75 वर्ष</div>
+
+    <div class="tab-group" style="margin-top: 16px;">
+      <button class="tab-btn active" onclick="showTab('g20')">20 वर्ष पॉलिसी</button>
+      <button class="tab-btn" onclick="showTab('g15')">15 वर्ष पॉलिसी</button>
+    </div>
+
+    <!-- 20-year -->
+    <div class="tab-content active" id="tab-g20">
+      <div class="plan-detail-block">
+        <div class="plan-header-row">
+          <h2>गोल सुरक्षा — <span>20 वर्ष</span> पॉलिसी अवधि</h2>
+          <div class="age-pill">प्रवेश आयु: 18 – 75 वर्ष</div>
+        </div>
+        <div class="features-grid">
+          <div class="feature-item"><span class="fi">🏆</span> गारंटीड परिपक्वता लाभ</div>
+          <div class="feature-item"><span class="fi">💰</span> वार्षिक प्रीमियम ₹25,000 से ₹2,40,000 तक</div>
+          <div class="feature-item"><span class="fi">📅</span> 12 वर्ष प्रीमियम → 20 वर्ष में मैच्योरिटी</div>
+          <div class="feature-item"><span class="fi">🔒</span> न्यूनतम 5 वर्ष Lock-in अवधि</div>
+          <div class="feature-item"><span class="fi">🏛️</span> धारा 80C आयकर छूट</div>
+          <div class="feature-item"><span class="fi">✅</span> बिना मेडिकल परीक्षण के जारी</div>
+          <div class="feature-item"><span class="fi">🏦</span> ऋण व अभ्यर्पण की सुविधा</div>
+          <div class="feature-item"><span class="fi">💼</span> 10× वार्षिक प्रीमियम = बीमा राशि</div>
+          <div class="feature-item"><span class="fi">💳</span> पहले वर्ष एकमुश्त; 2nd वर्ष से आसान किस्तें</div>
+          <div class="feature-item"><span class="fi">🚑</span> नॉर्मल + एक्सीडेंट + COVID-19 दावे स्वीकार</div>
+        </div>
+        <p class="table-title">मैच्योरिटी बेनिफिट टेबल — 20 वर्ष पॉलिसी (₹)</p>
+        <div class="table-wrapper">
+          <table class="plan-table">
+            <thead>
+              <tr>
+                <th>वार्षिक प्रीमियम (₹)</th>
+                <th>प्रीमियम वर्ष</th>
+                <th>कुल प्रीमियम</th>
+                <th>पॉलिसी अवधि</th>
+                <th>आयु 1 दिन–24 वर्ष</th>
+                <th>आयु 25–34 वर्ष</th>
+                <th>आयु 35–45 वर्ष</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>25,000</td><td>12</td><td>3,00,000</td><td>20 वर्ष</td><td>7,42,000</td><td>7,05,000</td><td>6,79,000</td></tr>
+              <tr><td>50,000</td><td>12</td><td>6,00,000</td><td>20 वर्ष</td><td>15,58,000</td><td>14,77,000</td><td>14,19,500</td></tr>
+              <tr><td>75,000</td><td>12</td><td>9,00,000</td><td>20 वर्ष</td><td>23,93,250</td><td>22,66,500</td><td>21,75,750</td></tr>
+              <tr><td>1,00,000</td><td>12</td><td>12,00,000</td><td>20 वर्ष</td><td>32,28,000</td><td>30,55,000</td><td>29,31,000</td></tr>
+              <tr><td>1,50,000</td><td>12</td><td>18,00,000</td><td>20 वर्ष</td><td>48,42,000</td><td>45,82,500</td><td>43,96,500</td></tr>
+              <tr><td>2,00,000</td><td>12</td><td>24,00,000</td><td>20 वर्ष</td><td>64,56,000</td><td>61,10,000</td><td>58,62,000</td></tr>
+              <tr><td>2,40,000</td><td>12</td><td>28,80,000</td><td>20 वर्ष</td><td>77,47,200</td><td>73,32,000</td><td>70,34,400</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="table-note">* मैच्योरिटी राशि आयु वर्ग के अनुसार भिन्न होती है। GST अतिरिक्त।</p>
+      </div>
+    </div>
+
+    <!-- 15-year -->
+    <div class="tab-content" id="tab-g15">
+      <div class="plan-detail-block">
+        <div class="plan-header-row">
+          <h2>गोल सुरक्षा — <span>15 वर्ष</span> पॉलिसी अवधि</h2>
+          <div class="age-pill">प्रवेश आयु: 18 – 75 वर्ष</div>
+        </div>
+        <div class="features-grid">
+          <div class="feature-item"><span class="fi">🏆</span> गारंटीड परिपक्वता लाभ</div>
+          <div class="feature-item"><span class="fi">💰</span> वार्षिक प्रीमियम ₹25,000 से ₹2,40,000 तक</div>
+          <div class="feature-item"><span class="fi">📅</span> 12 वर्ष प्रीमियम → 15 वर्ष में मैच्योरिटी</div>
+          <div class="feature-item"><span class="fi">🔒</span> न्यूनतम 5 वर्ष Lock-in अवधि</div>
+          <div class="feature-item"><span class="fi">🏛️</span> धारा 80C आयकर छूट</div>
+          <div class="feature-item"><span class="fi">✅</span> बिना मेडिकल परीक्षण के जारी</div>
+          <div class="feature-item"><span class="fi">🏦</span> ऋण व अभ्यर्पण की सुविधा</div>
+          <div class="feature-item"><span class="fi">💼</span> 10× वार्षिक प्रीमियम = बीमा राशि</div>
+          <div class="feature-item"><span class="fi">💳</span> पहले वर्ष एकमुश्त; 2nd वर्ष से आसान किस्तें</div>
+          <div class="feature-item"><span class="fi">🚑</span> नॉर्मल + एक्सीडेंट + COVID-19 दावे स्वीकार</div>
+        </div>
+        <p class="table-title">मैच्योरिटी बेनिफिट टेबल — 15 वर्ष पॉलिसी (₹)</p>
+        <div class="table-wrapper">
+          <table class="plan-table">
+            <thead>
+              <tr>
+                <th>वार्षिक प्रीमियम (₹)</th>
+                <th>प्रीमियम वर्ष</th>
+                <th>कुल प्रीमियम</th>
+                <th>पॉलिसी अवधि</th>
+                <th>आयु 3–24 वर्ष</th>
+                <th>आयु 25–34 वर्ष</th>
+                <th>आयु 35–45 वर्ष</th>
+                <th>आयु 45–60 वर्ष</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>25,000</td><td>12</td><td>3,00,000</td><td>15 वर्ष</td><td>5,17,500</td><td>4,99,000</td><td>4,86,000</td><td>4,78,750</td></tr>
+              <tr><td>50,000</td><td>12</td><td>6,00,000</td><td>15 वर्ष</td><td>10,72,000</td><td>10,30,500</td><td>10,01,000</td><td>9,85,500</td></tr>
+              <tr><td>75,000</td><td>12</td><td>9,00,000</td><td>15 वर्ष</td><td>16,34,250</td><td>15,69,750</td><td>15,24,000</td><td>15,00,000</td></tr>
+              <tr><td>1,00,000</td><td>12</td><td>12,00,000</td><td>15 वर्ष</td><td>21,97,000</td><td>21,10,000</td><td>20,47,000</td><td>20,15,000</td></tr>
+              <tr><td>1,50,000</td><td>12</td><td>18,00,000</td><td>15 वर्ष</td><td>32,95,500</td><td>31,65,000</td><td>30,70,500</td><td>30,22,500</td></tr>
+              <tr><td>2,00,000</td><td>12</td><td>24,00,000</td><td>15 वर्ष</td><td>43,94,000</td><td>42,20,000</td><td>40,94,000</td><td>40,30,000</td></tr>
+              <tr><td>2,40,000</td><td>12</td><td>28,80,000</td><td>15 वर्ष</td><td>52,72,800</td><td>50,64,000</td><td>49,12,800</td><td>48,36,000</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="table-note">* मैच्योरिटी राशि आयु वर्ग के अनुसार भिन्न होती है। GST अतिरिक्त।</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ HEALTH PLAN ══════════ -->
+<section class="contact-strip"><div class="container"><strong>Goal Suraksha information</strong><a class="btn light" href="#contact">Contact Us</a></div></section>
+<section id="health" class="page-hero"><div class="container"><h1>स्वास्थ्य बीमा योजना — जल्द आ रही है</h1><p>Bajaj Life के साथ IPPB की स्वास्थ्य सुरक्षा योजना</p><div class="badge-row"><span class="badge">Notify Me</span></div></div></section><section class="section"><div class="container grid two"><div><h2 class="section-title">अपडेट पाएं</h2><p class="lead">स्वास्थ्य योजना की जानकारी उपलब्ध होते ही संपर्क के लिए अपना नाम और मोबाइल नंबर भेजें।</p><div class="notice-box">WhatsApp CTA: 9992997558</div></div><form class="form" data-whatsapp-form><label class="field">नाम<input name="name" required></label><label class="field">मोबाइल नंबर<input name="mobile" inputmode="tel" required></label><input type="hidden" name="age" value="Health plan notify"><input type="hidden" name="plan" value="Health Plan"><button class="btn" type="submit">Notify Me / सूचित करें</button></form></div></section>
+<section id="about" class="section alt"><div class="container"><h1>IPPB × Bajaj Life</h1><p>विश्वसनीय बैंकिंग पहुंच और जीवन बीमा विशेषज्ञता के साथ सरल योजना जानकारी।</p></div></section><section class="section"><div class="container grid two"><article class="card"><h3>India Post Payments Bank</h3><p>ग्रामीण और semi-urban ग्राहकों तक पहुंच रखने वाला भरोसेमंद बैंकिंग नेटवर्क।</p></article><article class="card"><h3>Bajaj Life Insurance</h3><p>जीवन बीमा और गारंटीड लाभ योजनाओं का अनुभवी बीमा भागीदार।</p></article></div></section>
+<section id="contact" class="page-hero"><div class="container"><h1>संपर्क करें</h1><p>अधिक जानकारी के लिए अपने नजदीकी आईपीपीबी शाखा में संपर्क करें</p><div class="badge-row"><span class="badge">WhatsApp: 9992997558</span></div></div></section><section class="section"><div class="container grid two"><div><h2 class="section-title">Inquiry Form</h2><p class="lead">Form submit करने पर WhatsApp message तैयार हो जाएगा। Backend integration v1.0 scope में TBD है।</p><a class="btn secondary" href="https://wa.me/919992997558">WhatsApp Button: 9992997558</a></div><form class="form" data-whatsapp-form><label class="field">नाम (Name)<input name="name" required></label><label class="field">मोबाइल नंबर (Mobile)<input name="mobile" inputmode="tel" required></label><label class="field">आयु (Age)<input name="age" inputmode="numeric"></label><label class="field">रुचि की योजना / Plan of Interest<select name="plan"><option>GWG – गारंटीड वेल्थ गोल</option><option>eTouch II टर्म इंश्योरेन्स</option><option>Super Women Term Plan</option><option>गोल सुरक्षा गारंटीड रिटर्न्स – 15 वर्ष</option><option>गोल सुरक्षा गारंटीड रिटर्न्स – 20 वर्ष</option><option>स्वास्थ्य बीमा योजना</option></select></label><button class="btn" type="submit">सबमिट / Submit</button></form></div></section>
+  </main>
+
+  <a class="whatsapp-float" href="https://wa.me/919992997558?text=%E0%A4%A8%E0%A4%AE%E0%A4%B8%E0%A5%8D%E0%A4%A4%E0%A5%87%2C%20%E0%A4%AE%E0%A5%81%E0%A4%9D%E0%A5%87%20IPPB%20x%20Bajaj%20Life%20%E0%A4%AF%E0%A5%8B%E0%A4%9C%E0%A4%A8%E0%A4%BE%20%E0%A4%95%E0%A5%80%20%E0%A4%9C%E0%A4%BE%E0%A4%A8%E0%A4%95%E0%A4%BE%E0%A4%B0%E0%A5%80%20%E0%A4%9A%E0%A4%BE%E0%A4%B9%E0%A4%BF%E0%A4%8F%E0%A5%A4" aria-label="WhatsApp पर संपर्क करें">?</a>
+
+  <footer class="site-footer">
+    <div class="footer-grid">
+      <div><h3>IPPB x Bajaj Life</h3><p>सरल भाषा में बीमा और निवेश योजनाओं की जानकारी। अधिक जानकारी के लिए नजदीकी आईपीपीबी शाखा में संपर्क करें।</p></div>
+      <div><h3>Plans</h3><a href="#life">GWG Life Insurance</a><a href="#term">Term Plan</a><a href="#market">Market Plans</a></div>
+      <div><h3>Contact</h3><a href="https://wa.me/919992997558">WhatsApp: 9992997558</a><a href="#contact">Inquiry Form</a></div>
+    </div>
+  </footer>
+
+  <script>
+﻿document.addEventListener("DOMContentLoaded", () => {
+  const body = document.body;
+  const nav = document.querySelector(".site-nav");
+  const menuButton = document.querySelector(".nav-toggle");
+  const langButton = document.querySelector(".lang-toggle");
+  const savedLang = localStorage.getItem("ippb-lang") || "hi";
+
+  body.dataset.lang = savedLang;
+  if (langButton) langButton.textContent = savedLang === "hi" ? "HI | EN" : "EN | HI";
+
+  menuButton?.addEventListener("click", () => {
+    const open = nav?.classList.toggle("open");
+    menuButton.setAttribute("aria-expanded", open ? "true" : "false");
+  });
+
+  langButton?.addEventListener("click", () => {
+    const next = body.dataset.lang === "hi" ? "en" : "hi";
+    body.dataset.lang = next;
+    localStorage.setItem("ippb-lang", next);
+    langButton.textContent = next === "hi" ? "HI | EN" : "EN | HI";
+  });
+
+  document.querySelectorAll("form[data-whatsapp-form]").forEach((form) => {
+    form.addEventListener("submit", (event) => {
+      event.preventDefault();
+      const data = new FormData(form);
+      const message = [
+        "नमस्ते, मुझे IPPB x Bajaj Life योजना की जानकारी चाहिए।",
+        `नाम: ${data.get("name") || ""}`,
+        `मोबाइल: ${data.get("mobile") || ""}`,
+        `आयु: ${data.get("age") || ""}`,
+        `योजना: ${data.get("plan") || ""}`
+      ].join("\n");
+      window.location.href = `https://wa.me/919992997558?text=${encodeURIComponent(message)}`;
+    });
+  });
+});
+
+window.showTab = function showTab(name) {
+  const target = document.getElementById(`tab-${name}`);
+  if (!target) return;
+  const group = target.parentElement;
+  if (group) {
+    group.querySelectorAll('.tab-content').forEach((item) => item.classList.remove('active'));
+  }
+  target.classList.add('active');
+  const buttons = document.querySelectorAll('.tab-btn');
+  buttons.forEach((button) => {
+    const attr = button.getAttribute('onclick') || '';
+    button.classList.toggle('active', attr.includes(`'${name}'`) || attr.includes(`"${name}"`));
+  });
+};
+
+  </script>
+</body>
+</html>
