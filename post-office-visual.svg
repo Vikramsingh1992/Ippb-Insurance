@@ -1,0 +1,17 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 560" role="img" aria-label="India Post office and family protection illustration">
+  <rect width="720" height="560" fill="none"/>
+  <g opacity="0.95">
+    <path d="M90 230h390v245H90z" fill="#fff"/>
+    <path d="M70 210h430l-44-78H114z" fill="#f5a623"/>
+    <path d="M120 260h95v88h-95zM260 260h95v88h-95z" fill="#003087" opacity="0.82"/>
+    <path d="M393 260h54v215h-54z" fill="#d7252a"/>
+    <path d="M126 150h205v42H126z" fill="#d7252a"/>
+    <text x="151" y="180" font-family="Arial, sans-serif" font-size="28" font-weight="700" fill="#fff">POST</text>
+    <circle cx="575" cy="315" r="76" fill="#fff" opacity="0.94"/>
+    <path d="M575 232c50 28 83 72 83 122 0 86-83 136-83 136s-83-50-83-136c0-50 33-94 83-122z" fill="#d7252a" opacity="0.92"/>
+    <path d="M535 352c19 18 38 36 38 36s48-55 79-86" fill="none" stroke="#fff" stroke-width="22" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="219" cy="430" r="34" fill="#003087"/>
+    <circle cx="303" cy="430" r="34" fill="#003087"/>
+    <path d="M165 510c8-47 38-72 72-72s64 25 72 72M255 510c8-47 38-72 72-72 33 0 62 25 72 72" fill="none" stroke="#003087" stroke-width="28" stroke-linecap="round" opacity="0.72"/>
+  </g>
+</svg>
