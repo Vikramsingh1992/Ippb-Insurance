@@ -324,6 +324,14 @@ img, svg { max-width: 100%; }
   .header-actions .cta { padding: 10px 14px; }
 }
 </style>
+<!-- Replace G-B154QX1L18 with my actual Measurement ID -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-B154QX1L18"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-B154QX1L18');
+</script>
 </head>
 <body data-lang="hi">
   <header class="site-header">
@@ -593,6 +601,28 @@ img, svg { max-width: 100%; }
   </footer>
 
   <script>
+function trackAnalyticsEvent(eventName, eventCategory, eventLabel) {
+  if (typeof window.gtag === "function") {
+    window.gtag("event", eventName, {
+      event_category: eventCategory,
+      event_label: eventLabel
+    });
+  }
+}
+
+function trackPlanView(planName) {
+  trackAnalyticsEvent("plan_view", "Interest", planName);
+}
+
+function getTabLabel(name) {
+  const labels = {
+    etouch: "eTouch II",
+    women: "Super Women Term Plan",
+    g15: "Goal Suraksha 15yr",
+    g20: "Goal Suraksha 20yr"
+  };
+  return labels[name] || name;
+}
 ﻿document.addEventListener("DOMContentLoaded", () => {
   const body = document.body;
   const nav = document.querySelector(".site-nav");
@@ -615,9 +645,27 @@ img, svg { max-width: 100%; }
     langButton.textContent = next === "hi" ? "HI | EN" : "EN | HI";
   });
 
+  document.querySelectorAll('a[href*="wa.me"]').forEach((link) => {
+    link.addEventListener("click", () => {
+      trackAnalyticsEvent("whatsapp_click", "Enquiry", "WhatsApp Button");
+    });
+  });
+
+  const heroContactButton = document.querySelector('.hero-actions .btn[href="#contact"]');
+  heroContactButton?.addEventListener("click", () => {
+    trackAnalyticsEvent("whatsapp_click", "Enquiry", "WhatsApp Button");
+  });
+
+  document.querySelectorAll('.grid.three .card a.btn.secondary').forEach((button) => {
+    button.addEventListener("click", () => {
+      const title = button.closest(".card")?.querySelector("h3")?.textContent?.trim() || "Plan Name Here";
+      trackPlanView(title);
+    });
+  });
   document.querySelectorAll("form[data-whatsapp-form]").forEach((form) => {
     form.addEventListener("submit", (event) => {
       event.preventDefault();
+      trackAnalyticsEvent("form_submit", "Enquiry", "Contact Form");
       const data = new FormData(form);
       const message = [
         "नमस्ते, मुझे IPPB x Bajaj Life योजना की जानकारी चाहिए।",
@@ -634,6 +682,7 @@ img, svg { max-width: 100%; }
 window.showTab = function showTab(name) {
   const target = document.getElementById(`tab-${name}`);
   if (!target) return;
+  trackPlanView(getTabLabel(name));
   const group = target.parentElement;
   if (group) {
     group.querySelectorAll('.tab-content').forEach((item) => item.classList.remove('active'));
@@ -649,6 +698,9 @@ window.showTab = function showTab(name) {
   </script>
 </body>
 </html>
+
+
+
 
 
 
