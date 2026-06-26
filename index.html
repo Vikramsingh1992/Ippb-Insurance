@@ -359,6 +359,27 @@ img, svg { max-width: 100%; }
   .header-actions { margin-left: 0; }
   .header-actions .cta { padding: 10px 14px; }
 }
+/* Plan identity cards */
+.plan-finder { background: linear-gradient(180deg, #f5f7fa 0%, #ffffff 100%); }
+.plan-catalog { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 16px; margin-top: 24px; }
+.plan-card { --plan-color: var(--ippb-blue); position: relative; display: grid; gap: 14px; min-height: 100%; padding: 18px; border: 1px solid var(--line); border-left: 6px solid var(--plan-color); border-radius: 8px; background: var(--white); box-shadow: 0 10px 28px rgba(12, 35, 70, 0.08); transition: transform .2s ease, box-shadow .2s ease, border-color .2s ease; }
+.plan-card:hover, .plan-card:focus { transform: translateY(-3px); box-shadow: var(--shadow); border-color: color-mix(in srgb, var(--plan-color) 45%, var(--line)); }
+.plan-card.life { --plan-color: #d7252a; }
+.plan-card.term { --plan-color: #003087; }
+.plan-card.women { --plan-color: #8f2a8d; }
+.plan-card.market { --plan-color: #f5a623; }
+.plan-card.health { --plan-color: #1f9d55; }
+.plan-top { display: flex; align-items: center; justify-content: space-between; gap: 10px; }
+.plan-type { display: inline-flex; align-items: center; min-height: 28px; padding: 4px 9px; border-radius: 999px; background: color-mix(in srgb, var(--plan-color) 13%, #fff); color: var(--plan-color); font: 800 12px/1.1 Poppins, sans-serif; }
+.plan-icon { width: 42px; height: 42px; display: grid; place-items: center; border-radius: 8px; background: var(--plan-color); color: #fff; font: 900 17px/1 Poppins, sans-serif; }
+.plan-card h3 { margin: 0; color: #17213a; font: 800 21px/1.22 Poppins, "Noto Sans Devanagari", sans-serif; }
+.plan-card p { margin: 0; color: var(--muted); }
+.plan-metrics { display: grid; gap: 8px; padding-top: 2px; }
+.plan-metric { display: flex; justify-content: space-between; gap: 12px; border-top: 1px solid #edf1f7; padding-top: 8px; color: #4d5668; font-size: 14px; }
+.plan-metric strong { color: #17213a; text-align: right; }
+.plan-card .plan-link { margin-top: auto; color: var(--plan-color); font-weight: 900; }
+@media (max-width: 980px) { .plan-catalog { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 560px) { .plan-catalog { grid-template-columns: 1fr; } .plan-card { padding: 16px; } .plan-card h3 { font-size: 19px; } }
 </style>
 <!-- Replace G-B154QX1L18 with my actual Measurement ID -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-B154QX1L18"></script>
@@ -393,7 +414,7 @@ img, svg { max-width: 100%; }
   </header>
 
   <main>
-<section id="home" class="hero"><div class="container"><h1>अपना और परिवार का भविष्य सुरक्षित करें</h1><p>इंडिया पोस्ट पेमेंट्स बैंक और बजाज लाइफ की विश्वसनीय योजनाएं</p><p class="english">Secure your family’s future with trusted insurance and savings plans from IPPB and Bajaj Life.</p><div class="hero-actions"><a class="btn light" href="#life">योजना देखें / View Plans</a><a class="btn" href="#contact">अभी संपर्क करें / Contact Now</a></div></div><div class="hero-art" aria-hidden="true"><svg viewBox="0 0 720 560" role="img"><g opacity="0.95"><path d="M90 230h390v245H90z" fill="#fff"/><path d="M70 210h430l-44-78H114z" fill="#f5a623"/><path d="M120 260h95v88h-95zM260 260h95v88h-95z" fill="#003087" opacity="0.82"/><path d="M393 260h54v215h-54z" fill="#d7252a"/><path d="M126 150h205v42H126z" fill="#d7252a"/><text x="151" y="180" font-family="Arial, sans-serif" font-size="28" font-weight="700" fill="#fff">POST</text><path d="M575 232c50 28 83 72 83 122 0 86-83 136-83 136s-83-50-83-136c0-50 33-94 83-122z" fill="#d7252a" opacity="0.92"/><path d="M535 352c19 18 38 36 38 36s48-55 79-86" fill="none" stroke="#fff" stroke-width="22" stroke-linecap="round" stroke-linejoin="round"/><circle cx="219" cy="430" r="34" fill="#003087"/><circle cx="303" cy="430" r="34" fill="#003087"/><path d="M165 510c8-47 38-72 72-72s64 25 72 72M255 510c8-47 38-72 72-72 33 0 62 25 72 72" fill="none" stroke="#003087" stroke-width="28" stroke-linecap="round" opacity="0.72"/></g></svg></div></section><section class="section alt"><div class="container"><h2 class="section-title">लोकप्रिय योजनाएं</h2><p class="lead">गारंटीड लाभ, बीमा सुरक्षा और आसान संपर्क के साथ योजनाएं देखें।</p><div class="grid three"><article class="card"><div class="icon">₹</div><h3>GWG – गारंटीड वेल्थ गोल</h3><p>Life Insurance plan with regular assured income and return of premium options.</p><a class="btn secondary" href="#life">और जानें / Know More</a></article><article class="card"><div class="icon">20</div><h3>गोल सुरक्षा गारंटीड रिटर्न्स – 20 वर्ष</h3><p>Longer policy period for guaranteed maturity benefits up to 20 years.</p><a class="btn secondary" href="#market">और जानें / Know More</a></article><article class="card"><div class="icon">🛡️</div><h3>eTouch II + Super Women Term</h3><p>₹50 लाख से शुरू टर्म बीमा, ROP विकल्प और गंभीर बीमारी राइडर।</p><a class="btn secondary" href="#term">और जानें / Know More</a></article></div></div></section><section class="section"><div class="container"><h2 class="section-title">विश्वास के कारण</h2><div class="badge-row"><span class="trust-badge">बिना मेडिकल जांच के</span><span class="trust-badge">धारा 80C में छूट</span><span class="trust-badge">मृत्यु दावे स्वीकार</span><span class="trust-badge">एक्सीडेंट + कोविड दावे</span></div></div></section><section class="contact-strip"><div class="container"><strong>WhatsApp संपर्क: 9992997558</strong><span>अधिक जानकारी के लिए अपने नजदीकी आईपीपीबी शाखा में संपर्क करें</span><a class="btn light" href="#contact">Contact</a></div></section>
+<section id="home" class="hero"><div class="container"><h1>अपना और परिवार का भविष्य सुरक्षित करें</h1><p>इंडिया पोस्ट पेमेंट्स बैंक और बजाज लाइफ की विश्वसनीय योजनाएं</p><p class="english">Secure your family’s future with trusted insurance and savings plans from IPPB and Bajaj Life.</p><div class="hero-actions"><a class="btn light" href="#plans">योजना देखें / View Plans</a><a class="btn" href="#contact">अभी संपर्क करें / Contact Now</a></div></div><div class="hero-art" aria-hidden="true"><svg viewBox="0 0 720 560" role="img"><g opacity="0.95"><path d="M90 230h390v245H90z" fill="#fff"/><path d="M70 210h430l-44-78H114z" fill="#f5a623"/><path d="M120 260h95v88h-95zM260 260h95v88h-95z" fill="#003087" opacity="0.82"/><path d="M393 260h54v215h-54z" fill="#d7252a"/><path d="M126 150h205v42H126z" fill="#d7252a"/><text x="151" y="180" font-family="Arial, sans-serif" font-size="28" font-weight="700" fill="#fff">POST</text><path d="M575 232c50 28 83 72 83 122 0 86-83 136-83 136s-83-50-83-136c0-50 33-94 83-122z" fill="#d7252a" opacity="0.92"/><path d="M535 352c19 18 38 36 38 36s48-55 79-86" fill="none" stroke="#fff" stroke-width="22" stroke-linecap="round" stroke-linejoin="round"/><circle cx="219" cy="430" r="34" fill="#003087"/><circle cx="303" cy="430" r="34" fill="#003087"/><path d="M165 510c8-47 38-72 72-72s64 25 72 72M255 510c8-47 38-72 72-72 33 0 62 25 72 72" fill="none" stroke="#003087" stroke-width="28" stroke-linecap="round" opacity="0.72"/></g></svg></div></section><section class="section alt plan-finder" id="plans"><div class="container"><div class="section-label" data-i18n-hi="Plan Finder" data-i18n-en="Plan Finder">Plan Finder</div><h2 class="section-title" data-i18n-hi="अपनी जरूरत के अनुसार योजना पहचानें" data-i18n-en="Identify the Right Plan for Your Need">अपनी जरूरत के अनुसार योजना पहचानें</h2><p class="lead" data-i18n-hi="हर योजना को अलग रंग, श्रेणी और मुख्य लाभों के साथ दिखाया गया है ताकि आप जल्दी तुलना कर सकें।" data-i18n-en="Each plan is separated by color, category, and key benefits so you can compare quickly.">हर योजना को अलग रंग, श्रेणी और मुख्य लाभों के साथ दिखाया गया है ताकि आप जल्दी तुलना कर सकें।</p><div class="plan-catalog"><a class="plan-card life" href="#life" data-plan-name="GWG Guaranteed Wealth Goal"><div class="plan-top"><span class="plan-type" data-i18n-hi="Life Insurance" data-i18n-en="Life Insurance">Life Insurance</span><span class="plan-icon">GWG</span></div><h3 data-i18n-hi="GWG - गारंटीड वेल्थ गोल" data-i18n-en="GWG - Guaranteed Wealth Goal">GWG - गारंटीड वेल्थ गोल</h3><p data-i18n-hi="नियमित गारंटीड आय और ROP विकल्प के साथ बचत + बीमा योजना।" data-i18n-en="Savings plus insurance plan with regular guaranteed income and ROP option.">नियमित गारंटीड आय और ROP विकल्प के साथ बचत + बीमा योजना।</p><div class="plan-metrics"><span class="plan-metric"><span data-i18n-hi="आयु" data-i18n-en="Age">आयु</span><strong>6-60</strong></span><span class="plan-metric"><span data-i18n-hi="प्रीमियम" data-i18n-en="Premium">प्रीमियम</span><strong>₹30,000+</strong></span><span class="plan-metric"><span data-i18n-hi="लाभ" data-i18n-en="Benefit">लाभ</span><strong>Income + ROP</strong></span></div><span class="plan-link" data-i18n-hi="और जानें" data-i18n-en="Know More">और जानें</span></a><a class="plan-card term" href="#term" data-plan-name="eTouch II Term Plan"><div class="plan-top"><span class="plan-type" data-i18n-hi="Term Plan" data-i18n-en="Term Plan">Term Plan</span><span class="plan-icon">T</span></div><h3 data-i18n-hi="eTouch II टर्म इंश्योरेन्स" data-i18n-en="eTouch II Term Insurance">eTouch II टर्म इंश्योरेन्स</h3><p data-i18n-hi="उच्च कवर, ROP विकल्प और गंभीर बीमारी राइडर के साथ टर्म सुरक्षा।" data-i18n-en="Term protection with high cover, ROP option, and critical illness rider.">उच्च कवर, ROP विकल्प और गंभीर बीमारी राइडर के साथ टर्म सुरक्षा।</p><div class="plan-metrics"><span class="plan-metric"><span data-i18n-hi="आयु" data-i18n-en="Age">आयु</span><strong>18-85</strong></span><span class="plan-metric"><span data-i18n-hi="कवर" data-i18n-en="Cover">कवर</span><strong>₹50L+</strong></span><span class="plan-metric"><span data-i18n-hi="लाभ" data-i18n-en="Benefit">लाभ</span><strong>Protection</strong></span></div><span class="plan-link" data-i18n-hi="और जानें" data-i18n-en="Know More">और जानें</span></a><a class="plan-card women" href="#term" data-plan-name="Super Women Term Plan"><div class="plan-top"><span class="plan-type" data-i18n-hi="Women Term" data-i18n-en="Women Term">Women Term</span><span class="plan-icon">SW</span></div><h3 data-i18n-hi="Super Women Term Plan" data-i18n-en="Super Women Term Plan">Super Women Term Plan</h3><p data-i18n-hi="महिलाओं के लिए विशेष टर्म प्लान, किफायती प्रीमियम और सुरक्षा।" data-i18n-en="Special term plan for women with affordable premium and protection.">महिलाओं के लिए विशेष टर्म प्लान, किफायती प्रीमियम और सुरक्षा।</p><div class="plan-metrics"><span class="plan-metric"><span data-i18n-hi="आयु" data-i18n-en="Age">आयु</span><strong>18-85</strong></span><span class="plan-metric"><span data-i18n-hi="कवर" data-i18n-en="Cover">कवर</span><strong>₹50L+</strong></span><span class="plan-metric"><span data-i18n-hi="किसके लिए" data-i18n-en="For">किसके लिए</span><strong>Women</strong></span></div><span class="plan-link" data-i18n-hi="और जानें" data-i18n-en="Know More">और जानें</span></a><a class="plan-card market" href="#market" data-plan-name="Goal Suraksha Guaranteed Returns"><div class="plan-top"><span class="plan-type" data-i18n-hi="Guaranteed Return" data-i18n-en="Guaranteed Return">Guaranteed Return</span><span class="plan-icon">15/20</span></div><h3 data-i18n-hi="गोल सुरक्षा गारंटीड रिटर्न्स" data-i18n-en="Goal Suraksha Guaranteed Returns">गोल सुरक्षा गारंटीड रिटर्न्स</h3><p data-i18n-hi="15 और 20 वर्ष विकल्पों के साथ गारंटीड मैच्योरिटी लाभ।" data-i18n-en="Guaranteed maturity benefits with 15 and 20 year options.">15 और 20 वर्ष विकल्पों के साथ गारंटीड मैच्योरिटी लाभ।</p><div class="plan-metrics"><span class="plan-metric"><span data-i18n-hi="आयु" data-i18n-en="Age">आयु</span><strong>0-60</strong></span><span class="plan-metric"><span data-i18n-hi="प्रीमियम" data-i18n-en="Premium">प्रीमियम</span><strong>₹25k-₹2.4L</strong></span><span class="plan-metric"><span data-i18n-hi="अवधि" data-i18n-en="Term">अवधि</span><strong>15/20 yr</strong></span></div><span class="plan-link" data-i18n-hi="और जानें" data-i18n-en="Know More">और जानें</span></a><a class="plan-card health" href="#health" data-plan-name="Health Insurance Plan"><div class="plan-top"><span class="plan-type" data-i18n-hi="Health" data-i18n-en="Health">Health</span><span class="plan-icon">H</span></div><h3 data-i18n-hi="स्वास्थ्य बीमा योजना" data-i18n-en="Health Insurance Plan">स्वास्थ्य बीमा योजना</h3><p data-i18n-hi="स्वास्थ्य सुरक्षा योजना की जानकारी जल्द उपलब्ध होगी।" data-i18n-en="Health protection plan details will be available soon.">स्वास्थ्य सुरक्षा योजना की जानकारी जल्द उपलब्ध होगी।</p><div class="plan-metrics"><span class="plan-metric"><span data-i18n-hi="स्थिति" data-i18n-en="Status">स्थिति</span><strong data-i18n-hi="जल्द" data-i18n-en="Soon">जल्द</strong></span><span class="plan-metric"><span data-i18n-hi="CTA" data-i18n-en="CTA">CTA</span><strong>Notify</strong></span><span class="plan-metric"><span data-i18n-hi="संपर्क" data-i18n-en="Contact">संपर्क</span><strong>9992997558</strong></span></div><span class="plan-link" data-i18n-hi="सूचित करें" data-i18n-en="Notify Me">सूचित करें</span></a></div></div></section><section class="section"><div class="container"><h2 class="section-title">विश्वास के कारण</h2><div class="badge-row"><span class="trust-badge">बिना मेडिकल जांच के</span><span class="trust-badge">धारा 80C में छूट</span><span class="trust-badge">मृत्यु दावे स्वीकार</span><span class="trust-badge">एक्सीडेंट + कोविड दावे</span></div></div></section><section class="contact-strip"><div class="container"><strong>WhatsApp संपर्क: 9992997558</strong><span>अधिक जानकारी के लिए अपने नजदीकी आईपीपीबी शाखा में संपर्क करें</span><a class="btn light" href="#contact">Contact</a></div></section>
 <section id="life" class="page-hero"><div class="container"><h1>गारंटीड वेल्थ गोल (GWG) — एश्योर्ड इनकम योजना</h1><p>बीमा सुरक्षा के साथ जीवन के साथ भी और जीवन के बाद भी नियमित आय</p><div class="badge-row"><span class="badge">प्रवेश आयु: 6 वर्ष से 60 वर्ष तक</span></div></div></section><section class="section"><div class="container"><h2 class="section-title">मुख्य विशेषताएं</h2><div class="check-list"><div class="check-item">गारंटीड योजना लाभ</div><div class="check-item">प्रीमियम शुरुआत वार्षिक ₹30,000 से — अधिकतम कोई सीमा नहीं</div><div class="check-item">प्रीमियम भुगतान अवधि: 8, 10, 12 वर्ष के विकल्प</div><div class="check-item">आय भुगतान विलंबित (0–8 वर्ष डिफर) रखने का विकल्प</div><div class="check-item">प्रीमियम भुगतान के पश्चात् 15, 20, 25, 30, 35 व 40 वर्ष तक नियमित गारंटीड आय</div><div class="check-item">योजना पूर्ण होने पर ROP मूलधन के साथ 100%–300% मैच्योरिटी बेनिफिट का विकल्प</div><div class="check-item">बिना मेडिकल परीक्षण के आसानी से जारी</div><div class="check-item">धारा 80C के अंतर्गत आयकर छूट</div><div class="check-item">मृत्यु होने पर नॉमिनी को नियमित आय जारी रहेगी और ROP मूलधन वापसी</div><div class="check-item">एक्सीडेंट, नॉर्मल मृत्यु व मृत्यु दावे स्वीकार</div></div></div></section><section class="section alt"><div class="container"><h2 class="section-title">30 वर्ष आयु समूह का उदाहरण</h2><div class="timeline"><div class="timeline-step">10 साल प्रीमियम</div><div class="timeline-step">2 साल स्थगन</div><div class="timeline-step">25 साल आय</div><div class="timeline-step">अंत में ROP</div></div><div class="table-wrap"><table><tbody><tr><th>Parameter</th><th>Value</th></tr><tr><td>प्रीमियम भुगतान अवधि</td><td>10 साल</td></tr><tr><td>पॉलिसी अवधि</td><td>12 साल</td></tr><tr><td>आय अवधि</td><td>25 साल</td></tr><tr><td>स्थगन अवधि</td><td>2 साल</td></tr><tr><td>वार्षिक प्रीमियम</td><td>₹1,00,000</td></tr><tr><td>कुल प्रीमियम</td><td>₹10,00,000</td></tr><tr><td>वार्षिक आय (13–25 वर्ष)</td><td>₹99,322</td></tr><tr><td>25 साल में कुल आय</td><td>₹24,83,050</td></tr><tr><td>आय अवधि के अंत में ROP</td><td>₹10,00,000</td></tr><tr class="highlight-row"><td>कुल लाभ</td><td>₹34,83,050</td></tr><tr><td>मृत्यु पर नॉमिनी आय</td><td>₹95,000 × 25 = ₹23,75,000</td></tr><tr><td>ब्याज दर</td><td>8.25%</td></tr><tr><td>OR एकमुश्त विकल्प</td><td>₹10,00,000</td></tr></tbody></table></div></div></section><section class="contact-strip"><div class="container"><strong>अधिक जानकारी के लिए संपर्क करें</strong><a class="btn light" href="#contact">Contact Us</a></div></section>
 <section id="term" class="section">
   <div class="container">
@@ -666,8 +687,51 @@ function getTabLabel(name) {
   const langButton = document.querySelector(".lang-toggle");
   const savedLang = localStorage.getItem("ippb-lang") || "hi";
 
-  body.dataset.lang = savedLang;
-  if (langButton) langButton.textContent = savedLang === "hi" ? "HI | EN" : "EN | HI";
+  const selectorTranslations = [
+    ['.site-nav a[href="#home"]', 'होम', 'Home'],
+    ['.site-nav a[href="#life"]', 'लाइफ इंश्योरेंस', 'Life Insurance'],
+    ['.site-nav a[href="#term"]', 'टर्म प्लान', 'Term Plan'],
+    ['.site-nav a[href="#market"]', 'मार्केट प्लान', 'Market Plans'],
+    ['.site-nav a[href="#health"]', 'हेल्थ प्लान', 'Health Plan'],
+    ['.site-nav a[href="#contact"]', 'संपर्क', 'Contact'],
+    ['.header-actions .cta', 'संपर्क करें', 'Contact Us'],
+    ['.hero h1', 'अपना और परिवार का भविष्य सुरक्षित करें', 'Secure Your Family Future'],
+    ['.hero .container > p:not(.english)', 'इंडिया पोस्ट पेमेंट्स बैंक और बजाज लाइफ की विश्वसनीय योजनाएं', 'Trusted insurance and savings plans from IPPB and Bajaj Life'],
+    ['.hero-actions .btn.light', 'योजना देखें', 'View Plans'],
+    ['.hero-actions .btn:not(.light)', 'अभी संपर्क करें', 'Contact Now'],
+    ['.trust-badge:nth-child(1)', 'बिना मेडिकल जांच के', 'No medical test options'],
+    ['.trust-badge:nth-child(2)', 'धारा 80C में छूट', 'Section 80C benefits'],
+    ['.trust-badge:nth-child(3)', 'मृत्यु दावे स्वीकार', 'Death claims accepted'],
+    ['.trust-badge:nth-child(4)', 'एक्सीडेंट + कोविड दावे', 'Accident + Covid claims'],
+    ['#term .section-title', 'टर्म बीमा योजनाएं', 'Term Insurance Plans'],
+    ['#term .section-sub', 'IPPB × Bajaj Life की दो विशेष टर्म योजनाएं — सभी के लिए और केवल महिलाओं के लिए', 'Two term insurance choices from IPPB x Bajaj Life: for everyone and for women'],
+    ['button[onclick="showTab(\'etouch\')"]', 'eTouch II — सभी के लिए', 'eTouch II - For Everyone'],
+    ['button[onclick="showTab(\'women\')"]', 'Super Women Term Plan', 'Super Women Term Plan'],
+    ['#market .section-title', 'गोल सुरक्षा गारंटीड रिटर्न्स योजना', 'Goal Suraksha Guaranteed Returns'],
+    ['#market .section-sub', 'कम समय के निवेश पर अधिक लाभ — 15 या 20 वर्ष की पॉलिसी अवधि चुनें।', 'Guaranteed maturity options with 15 or 20 year policy terms.'],
+    ['button[onclick="showTab(\'g20\')"]', '20 वर्ष पॉलिसी', '20 Year Policy'],
+    ['button[onclick="showTab(\'g15\')"]', '15 वर्ष पॉलिसी', '15 Year Policy'],
+    ['#health h1', 'स्वास्थ्य बीमा योजना — जल्द आ रही है', 'Health Insurance Plan - Coming Soon'],
+    ['#contact h1', 'संपर्क करें', 'Contact Us']
+  ];
+
+  const applyLanguage = (lang) => {
+    body.dataset.lang = lang;
+    document.documentElement.lang = lang === 'hi' ? 'hi' : 'en';
+    if (langButton) {
+      langButton.textContent = lang === 'hi' ? 'HI | EN' : 'EN | HI';
+      langButton.setAttribute('aria-label', lang === 'hi' ? 'Switch to English' : 'हिंदी में बदलें');
+    }
+    document.querySelectorAll('[data-i18n-hi][data-i18n-en]').forEach((item) => {
+      item.textContent = lang === 'hi' ? item.dataset.i18nHi : item.dataset.i18nEn;
+    });
+    selectorTranslations.forEach(([selector, hi, en]) => {
+      const item = document.querySelector(selector);
+      if (item) item.textContent = lang === 'hi' ? hi : en;
+    });
+  };
+
+  applyLanguage(savedLang);
 
   menuButton?.addEventListener("click", () => {
     const open = nav?.classList.toggle("open");
@@ -676,9 +740,8 @@ function getTabLabel(name) {
 
   langButton?.addEventListener("click", () => {
     const next = body.dataset.lang === "hi" ? "en" : "hi";
-    body.dataset.lang = next;
     localStorage.setItem("ippb-lang", next);
-    langButton.textContent = next === "hi" ? "HI | EN" : "EN | HI";
+    applyLanguage(next);
   });
 
   document.querySelectorAll('a[href*="wa.me"]').forEach((link) => {
@@ -692,9 +755,9 @@ function getTabLabel(name) {
     trackAnalyticsEvent("whatsapp_click", "Enquiry", "WhatsApp Button");
   });
 
-  document.querySelectorAll('.grid.three .card a.btn.secondary').forEach((button) => {
+  document.querySelectorAll('.plan-card, .grid.three .card a.btn.secondary').forEach((button) => {
     button.addEventListener("click", () => {
-      const title = button.closest(".card")?.querySelector("h3")?.textContent?.trim() || "Plan Name Here";
+      const title = button.dataset.planName || button.closest(".card, .plan-card")?.querySelector("h3")?.textContent?.trim() || "Plan Name Here";
       trackPlanView(title);
     });
   });
@@ -734,6 +797,10 @@ window.showTab = function showTab(name) {
   </script>
 </body>
 </html>
+
+
+
+
 
 
 
